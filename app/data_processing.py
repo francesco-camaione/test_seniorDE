@@ -81,7 +81,7 @@ def closest_polling_events(d: DataFrame) -> DataFrame:
                     from_unixtime(col("negative_pollingCT_orderCT_difference") + col("order_creation_time"),
                                   "yyyy-MM-dd HH:mm:ss")
                     ) \
-        .withColumn("imme_following_polling_event_CT",
+        .withColumn("immed_following_polling_event_CT",
                     from_unixtime(col("positive_pollingCT_orderCT_difference") + col("order_creation_time"),
                                   "yyyy-MM-dd HH:mm:ss")
                     ) \
@@ -95,10 +95,10 @@ def closest_conn_status(d: DataFrame) -> DataFrame:
         to this status. This can be across any period of time before the order creation time.
         Not all devices have a connectivity status.
 
-        Solution: Find the min negative difference between conn status and order creation time. Access its date time and
+        Solution:
+        Find the min negative difference between conn status and order creation time. Access its date time and
         status. Null values should have been removed in the df passed as parameter.
     """
-    d.show(3)
     new_df = d.filter(col("conn_statusCT_orderCT_difference") < 0) \
         .withColumn("order_creation_time", unix_timestamp("order_creation_time", format="yyyy-MM-dd HH:mm:ss"))
 
