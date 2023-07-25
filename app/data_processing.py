@@ -1,9 +1,23 @@
 from pyspark.sql import DataFrame
-from pyspark.sql.functions import col, count, countDistinct, when, sum
+from pyspark.sql.functions import col, count, countDistinct, when, sum, first, min, from_unixtime, unix_timestamp, \
+    to_timestamp
 from typing import List
 
 
 def polling_events_info(d: DataFrame, periods: List[int]) -> DataFrame:
+    """
+    Goal: For each order dispatched to a device compute :
+        ● The total count of all polling events
+        ● The count of each type of polling status_code
+        ● The count of each type of polling error_code and the count of responses without error
+        codes.
+        ...across the following periods of time:
+        ● Three minutes before the order creation time ● Three minutes after the order creation time
+        ● One hour before the order creation time
+
+    Solution plan: For every time periods, filter the df to include only requested time periods.
+    Then, for each unique order compute the requested output.
+        """
     new_df = d
     for s in periods:
         if s < 0:
@@ -38,3 +52,37 @@ def polling_events_info(d: DataFrame, periods: List[int]) -> DataFrame:
 
         new_df = new_df.join(_df, on="order_id")
     return new_df
+
+
+def time_polling_event(d: DataFrame) -> DataFrame:
+    """Across an unbounded period of time, we would like to know:
+        The time of the polling event immediately preceding, and immediately following the order creation time.
+
+        Solution: Get the difference between polling_CT and orderCT and use them to get the min() for: negative
+        and positive values. The min negative value will be the closest one preceding the order_CT.
+        The min positive value will be the closest one following the order_CT.
+        Then add those values to orderCT to compute the datetime.
+    """
+    df = d.withColumn("p_pollingCT_orderCT_difference", when(
+        col("pollingCT_orderCT_difference") > 0, col("pollingCT_orderCT_difference"))
+                      ) \
+        .withColumn("order_creation_time", unix_timestamp("order_creation_time", format="yyyy-MM-dd HH:mm:ss")) \
+        .sort("pollingCT_orderCT_difference") \
+        .withColumnRenamed("p_pollingCT_orderCT_difference", "positive_pollingCT_orderCT_difference")
+
+    result_df = df.groupBy("order_id").agg(
+        first("order_creation_time").alias("order_creation_time"),
+        first("device_id").alias("device_id"),
+        min("pollingCT_orderCT_difference").alias("negative_pollingCT_orderCT_difference"),
+        min("positive_pollingCT_orderCT_difference").alias("positive_pollingCT_orderCT_difference")
+    ) \
+        .withColumn("immed_preceding_polling_event_CT",
+                    from_unixtime(col("negative_pollingCT_orderCT_difference") + col("order_creation_time"),
+                                  "yyyy-MM-dd HH:mm:ss")
+                    ) \
+        .withColumn("imme_following_polling_event_CT",
+                    from_unixtime(col("positive_pollingCT_orderCT_difference") + col("order_creation_time"),
+                                  "yyyy-MM-dd HH:mm:ss")
+                    ) \
+        .withColumn("order_creation_time", to_timestamp("order_creation_time"))
+    return result_df

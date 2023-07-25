@@ -1,7 +1,7 @@
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import col, unix_timestamp, first
 
-from app.data_processing import polling_events_info
+from app.data_processing import polling_events_info, time_polling_event
 
 # create spark session
 spark = SparkSession.builder.getOrCreate()
@@ -29,20 +29,21 @@ df = orders_df \
     .drop("id", "polling_device_id", "cs_device_id") \
     .dropna(how="any", subset="creation_time")
 
-df.show(1)
-
 df2 = df.withColumn("pollingCT_orderCT_difference",
-                    unix_timestamp("creation_time") - unix_timestamp("order_creation_time")
+                    unix_timestamp("creation_time", "yyyy-MM-dd HH:mm:ss") - unix_timestamp("order_creation_time",
+                                                                                            "yyyy-MM-dd HH:mm:ss")
                     ) \
     .withColumn("conn_statusCT_orderCT_difference",
                 unix_timestamp("conn_status_creation_time") - unix_timestamp("order_creation_time")
                 )
+df2.show(3)
 
 time_periods = [-180, 180, -3600]
 
-result_df = polling_events_info(df2, time_periods)
 # *********FIRST EXERCISE***********
-
+#result_df = polling_events_info(df2, time_periods)
+# result_df.show(2)
+#
 # result_df.groupBy("order_id").agg(
 #     first("device_id").alias("device_id"),
 #     # count of polling events
@@ -62,5 +63,5 @@ result_df = polling_events_info(df2, time_periods)
 #     first("ok_responses_180s").alias("ok_responses_3m_afterOCT"),
 #     first("ok_responses_-3600s").alias("ok_responses_1h_beforeOCT"),
 # ).show(8)
+d = time_polling_event(df2).show(11)
 
-result_df.show(2)

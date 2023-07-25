@@ -10,6 +10,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="/glovo_test_dataset/orders.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
       </map>
     </option>
   </component>
