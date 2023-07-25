@@ -12,7 +12,8 @@ def polling_events_info(d: DataFrame, periods: List[int]) -> DataFrame:
         ● The count of each type of polling error_code and the count of responses without error
         codes.
         ...across the following periods of time:
-        ● Three minutes before the order creation time ● Three minutes after the order creation time
+        ● Three minutes before the order creation time
+        ● Three minutes after the order creation time
         ● One hour before the order creation time
 
     Solution plan: For every time periods, filter the df to include only requested time periods.
@@ -54,7 +55,7 @@ def polling_events_info(d: DataFrame, periods: List[int]) -> DataFrame:
     return new_df
 
 
-def time_polling_event(d: DataFrame) -> DataFrame:
+def closest_polling_events(d: DataFrame) -> DataFrame:
     """Across an unbounded period of time, we would like to know:
         The time of the polling event immediately preceding, and immediately following the order creation time.
 
