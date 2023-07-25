@@ -87,3 +87,29 @@ def closest_polling_events(d: DataFrame) -> DataFrame:
                     ) \
         .withColumn("order_creation_time", to_timestamp("order_creation_time"))
     return result_df
+
+
+def closest_conn_status(d: DataFrame) -> DataFrame:
+    """Across an unbounded period of time, we would like to know:
+        The most recent connectivity status (“ONLINE” or “OFFLINE”) before an order, and at what time the order changed
+        to this status. This can be across any period of time before the order creation time.
+        Not all devices have a connectivity status.
+
+        Solution: Find the min negative difference between conn status and order creation time. Access its date time and
+        status. Null values should have been removed in the df passed as parameter.
+    """
+    d.show(3)
+    new_df = d.filter(col("conn_statusCT_orderCT_difference") < 0) \
+        .withColumn("order_creation_time", unix_timestamp("order_creation_time", format="yyyy-MM-dd HH:mm:ss"))
+
+    df = new_df.groupBy("order_id").agg(
+        first("order_creation_time").alias("order_creation_time"),
+        first("device_id").alias("device_id"),
+        min("conn_statusCT_orderCT_difference").alias("negative_conn_statusCT_orderCT_difference"),
+        first("status").alias("most_recent_conn_status")
+    ).withColumn(
+        "most_recent_conn_status_time",
+        from_unixtime(col("negative_conn_statusCT_orderCT_difference") + col("order_creation_time"))
+    ).withColumn("order_creation_time", to_timestamp("order_creation_time"))
+
+    return df
