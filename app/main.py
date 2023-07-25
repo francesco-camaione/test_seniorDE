@@ -8,17 +8,17 @@ spark = SparkSession.builder.getOrCreate()
 
 # drop orders where device_id is null
 orders_df = spark.read \
-    .csv("./glovo_test_dataset/orders.csv", header=True, inferSchema=True) \
+    .csv("./test_dataset/orders.csv", header=True, inferSchema=True) \
     .withColumnRenamed("_c0", "id") \
     .dropna("any", None, "device_id")
 
 polling_df = spark.read \
-    .csv("./glovo_test_dataset/polling.csv", header=True, inferSchema=True) \
+    .csv("./test_dataset/polling.csv", header=True, inferSchema=True) \
     .withColumnRenamed("_c0", "id") \
     .withColumnRenamed("device_id", "polling_device_id")
 
 conn_status_df = spark.read \
-    .csv("./glovo_test_dataset/connectivity_status.csv", header=True, inferSchema=True) \
+    .csv("./test_dataset/connectivity_status.csv", header=True, inferSchema=True) \
     .withColumnRenamed("_c0", "id") \
     .withColumnRenamed("device_id", "cs_device_id")
 
@@ -83,7 +83,7 @@ output_df = d_1\
 
 output_df.show(10)
 
-output_path = "../glovo_test_dataset/output_dataset"
+output_path = "../test_dataset/output_dataset"
 output_df.write.option("header", "true").csv(output_path, mode="overwrite")
 
 # HOW TO PRODUCE FINAL SINGLE FORMATTED CSV DATASET
