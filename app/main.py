@@ -32,7 +32,7 @@ d = orders_df \
 
 # 3. compute the differences between creation times
 df = d.withColumn("pollingCT_orderCT_difference",
-                  unix_timestamp("creation_time", "yyyy-MM-dd HH:mm:ss") - unix_timestamp("order_creation_time")
+                  unix_timestamp("creation_time") - unix_timestamp("order_creation_time")
                   ) \
     .withColumn("conn_statusCT_orderCT_difference",
                 unix_timestamp("conn_status_creation_time") - unix_timestamp("order_creation_time")
