@@ -69,7 +69,6 @@ d_2 = closest_polling_events(df).withColumnRenamed("order_id", "order_id_2")
 # *********THIRD TASK DF***********
 d_3 = closest_conn_status(df).withColumnRenamed("order_id", "order_id_3")
 
-
 d_2_columns_to_remove = ["device_id", "negative_pollingCT_orderCT_difference", "positive_pollingCT_orderCT_difference"]
 selected_d2_columns = remove_matching_values(d_2.columns, d_2_columns_to_remove)
 
@@ -82,6 +81,8 @@ output_df = d_1\
     .drop("order_id_2", "order_id_3")
 
 output_df.show(10)
+
+#output_df.explain(extended=True)
 
 output_path = "../test_dataset/output_dataset"
 output_df.write.option("header", "true").csv(output_path, mode="overwrite")

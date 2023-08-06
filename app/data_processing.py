@@ -50,8 +50,14 @@ def polling_events_info(d: DataFrame, periods: List[int]) -> DataFrame:
                 # count of responses without error codes for every time period
                 sum(when(col("status_code") == 200, 1).otherwise(0)).alias(f"ok_responses_{s}s")
             )
-
         new_df = new_df.join(_df, on="order_id")
+            # new_df.withColumn(f"tot_poll_events_{s}s", _df[f"total_poll_events_{s}s"])
+            # new_df.withColumn(f"count_typeof_status_c_{s}s", _df[f"count_typeof_status_c_{s}s"])
+            # new_df.withColumn(f"count_typeof_error_c_{s}s", _df[f"count_typeof_error_c_{s}s"])
+            # new_df.withColumn(f"ok_responses_{s}s", _df[f"ok_responses_{s}s"])
+
+    # new_df.show(3)
+
     return new_df
 
 
@@ -67,8 +73,7 @@ def closest_polling_events(d: DataFrame) -> DataFrame:
     df = d.withColumn("p_pollingCT_orderCT_difference", when(
         col("pollingCT_orderCT_difference") > 0, col("pollingCT_orderCT_difference"))
                       ) \
-        .withColumn("order_creation_time", unix_timestamp("order_creation_time", format="yyyy-MM-dd HH:mm:ss")) \
-        .sort("pollingCT_orderCT_difference") \
+        .withColumn("order_creation_time", unix_timestamp("order_creation_time")) \
         .withColumnRenamed("p_pollingCT_orderCT_difference", "positive_pollingCT_orderCT_difference")
 
     result_df = df.groupBy("order_id").agg(
@@ -78,12 +83,10 @@ def closest_polling_events(d: DataFrame) -> DataFrame:
         min("positive_pollingCT_orderCT_difference").alias("positive_pollingCT_orderCT_difference")
     ) \
         .withColumn("immed_preceding_polling_event_CT",
-                    from_unixtime(col("negative_pollingCT_orderCT_difference") + col("order_creation_time"),
-                                  "yyyy-MM-dd HH:mm:ss")
+                    from_unixtime(col("negative_pollingCT_orderCT_difference") + col("order_creation_time"))
                     ) \
         .withColumn("immed_following_polling_event_CT",
-                    from_unixtime(col("positive_pollingCT_orderCT_difference") + col("order_creation_time"),
-                                  "yyyy-MM-dd HH:mm:ss")
+                    from_unixtime(col("positive_pollingCT_orderCT_difference") + col("order_creation_time"))
                     ) \
         .withColumn("order_creation_time", to_timestamp("order_creation_time"))
     return result_df
@@ -100,7 +103,7 @@ def closest_conn_status(d: DataFrame) -> DataFrame:
         status. Null values should have been removed in the df passed as parameter.
     """
     new_df = d.filter(col("conn_statusCT_orderCT_difference") < 0) \
-        .withColumn("order_creation_time", unix_timestamp("order_creation_time", format="yyyy-MM-dd HH:mm:ss"))
+        .withColumn("order_creation_time", unix_timestamp("order_creation_time"))
 
     df = new_df.groupBy("order_id").agg(
         first("order_creation_time").alias("order_creation_time"),
