@@ -4,7 +4,12 @@ from lib.utils import remove_matching_values
 from app.data_processing import polling_events_info, closest_polling_events, closest_conn_status
 
 # create spark session
-spark = SparkSession.builder.getOrCreate()
+spark = SparkSession.builder \
+    .config("spark.executor.memory", "4g") \
+    .config("spark.driver.memory", "4g") \
+    .config("spark.memory.offHeap.enabled", True) \
+    .config("spark.memory.offHeap.size", "2g") \
+    .getOrCreate()
 
 # drop orders where device_id is null
 orders_df = spark.read \
@@ -49,19 +54,19 @@ d_2 = closest_polling_events(df).withColumnRenamed("order_id", "order_id_2")
 # *********THIRD TASK DF***********
 d_3 = closest_conn_status(df).withColumnRenamed("order_id", "order_id_3")
 
-d_2_columns_to_remove = ["device_id", "negative_pollingCT_orderCT_difference", "positive_pollingCT_orderCT_difference"]
+d_2_columns_to_remove = ["order_creation_time", "device_id", "negative_pollingCT_orderCT_difference",
+                         "positive_pollingCT_orderCT_difference"]
 selected_d2_columns = remove_matching_values(d_2.columns, d_2_columns_to_remove)
 
 d_3_columns_to_remove = ["order_creation_time", "device_id", "negative_conn_statusCT_orderCT_difference"]
 selected_d3_columns = remove_matching_values(d_3.columns, d_3_columns_to_remove)
 
-output_df = d_1\
+output_df = d_1 \
     .join(d_2.select(selected_d2_columns), on=d_1["order_id"] == d_2["order_id_2"]) \
     .join(d_3.select(selected_d3_columns), on=d_1["order_id"] == d_3["order_id_3"]) \
     .drop("order_id_2", "order_id_3")
 
 output_df.show(10)
-
 
 output_path = "../test_dataset/output_dataset"
 output_df.write.option("header", "true").csv(output_path, mode="overwrite")
