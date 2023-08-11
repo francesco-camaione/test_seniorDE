@@ -1,10 +1,11 @@
 from pyspark.sql import DataFrame
 from pyspark.sql.functions import col, count, countDistinct, when, sum, first, min, from_unixtime, unix_timestamp, \
-    to_timestamp
+    to_timestamp, collect_set
+from pyspark.sql.window import Window
 from typing import List
 
 
-def polling_events_info(d: DataFrame, periods: List[int]) -> DataFrame:
+def old_polling_events_info(d: DataFrame, periods: List[int]) -> DataFrame:
     """
     Goal: For each order dispatched to a device compute :
         ● The total count of all polling events
@@ -50,15 +51,64 @@ def polling_events_info(d: DataFrame, periods: List[int]) -> DataFrame:
                 # count of responses without error codes for every time period
                 sum(when(col("status_code") == 200, 1).otherwise(0)).alias(f"ok_responses_{s}s")
             )
-        new_df = new_df.join(_df, on="order_id")
             # new_df.withColumn(f"tot_poll_events_{s}s", _df[f"total_poll_events_{s}s"])
             # new_df.withColumn(f"count_typeof_status_c_{s}s", _df[f"count_typeof_status_c_{s}s"])
             # new_df.withColumn(f"count_typeof_error_c_{s}s", _df[f"count_typeof_error_c_{s}s"])
             # new_df.withColumn(f"ok_responses_{s}s", _df[f"ok_responses_{s}s"])
+            # new_df.show(2)
+        new_df = new_df.join(_df, on="order_id")
 
-    # new_df.show(3)
-
+    new_df.explain()
     return new_df
+
+
+def polling_events_info(d: DataFrame, periods: List[int]) -> DataFrame:
+    """
+    Goal: For each order dispatched to a device compute :
+        ● The total count of all polling events
+        ● The count of each type of polling status_code
+        ● The count of each type of polling error_code and the count of responses without error
+        codes.
+        ...across the following periods of time:
+        ● Three minutes before the order creation time
+        ● Three minutes after the order creation time
+        ● One hour before the order creation time
+
+    Solution plan: For every time periods, compute and add the necessary columns using window functions and
+    filtering the df to include only requested time periods.
+        """
+    window_spec = Window().partitionBy("order_id")
+
+    new_df = d
+    for s in periods:
+        if s < 0:
+            time_condition = (new_df["pollingCT_orderCT_difference"] >= s) & (
+                    new_df["pollingCT_orderCT_difference"] <= 0)
+            suffix = f"_{s}s"
+        else:
+            time_condition = (new_df["pollingCT_orderCT_difference"] <= s) & (
+                    new_df["pollingCT_orderCT_difference"] >= 0)
+            suffix = f"_{s}s"
+
+        new_df = new_df.withColumn(
+            f"total_poll_events{suffix}",
+            sum(when(time_condition, 1).otherwise(0)).over(window_spec)
+        ).withColumn(
+            f"count_typeof_status_c{suffix}",
+            collect_set(when(time_condition, col("status_code"))).over(window_spec)
+        ).withColumn(
+            f"count_typeof_error_c{suffix}",
+            collect_set(when(time_condition, col("error_code"))).over(window_spec)
+        ).withColumn(
+            f"ok_responses{suffix}",
+            sum(when(time_condition & (col("status_code") == 200), 1).otherwise(0)).over(window_spec)
+        )
+
+    result_df = new_df.groupBy("order_id").agg(
+        *[first(column).alias(f"{column}") for column in new_df.columns if column != "order_id"]
+    )
+    result_df.show(3)
+    return result_df
 
 
 def closest_polling_events(d: DataFrame) -> DataFrame:

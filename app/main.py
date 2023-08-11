@@ -41,27 +41,7 @@ df = d.withColumn("pollingCT_orderCT_difference",
 time_periods = [-180, 180, -3600]
 
 # *********FIRST TASK DF***********
-d_pe = polling_events_info(df, time_periods)
-
-d_1 = d_pe.groupBy("order_id").agg(
-    first("device_id").alias("device_id"),
-    # count of polling events
-    first("total_poll_events_-180s").alias("poll_events_3m_beforeOCT"),
-    first("total_poll_events_180s").alias("poll_events_3m_afterOCT"),
-    first("total_poll_events_-3600s").alias("poll_events_1h_beforeOCT"),
-    # count of polling status codes
-    first("count_typeof_status_c_-180s").alias("typesOf_status_codes_3m_beforeOCT"),
-    first("count_typeof_status_c_180s").alias("typesOf_status_codes_3m_afterOCT"),
-    first("count_typeof_status_c_-3600s").alias("typesOf_status_codes_1h_beforeOCT"),
-    # count of types of error codes
-    first("count_typeof_error_c_-180s").alias("typesOf_error_codes_3m_beforeOCT"),
-    first("count_typeof_error_c_180s").alias("typesOf_error_codes_3m_afterOCT"),
-    first("count_typeof_error_c_-3600s").alias("typesOf_error_codes_1h_beforeOCT"),
-    # count of ok responses
-    first("ok_responses_-180s").alias("ok_responses_3m_beforeOCT"),
-    first("ok_responses_180s").alias("ok_responses_3m_afterOCT"),
-    first("ok_responses_-3600s").alias("ok_responses_1h_beforeOCT"),
-)
+d_1 = polling_events_info(df, time_periods)
 
 # # *********SECOND TASK DF***********
 d_2 = closest_polling_events(df).withColumnRenamed("order_id", "order_id_2")
@@ -82,7 +62,6 @@ output_df = d_1\
 
 output_df.show(10)
 
-#output_df.explain(extended=True)
 
 output_path = "../test_dataset/output_dataset"
 output_df.write.option("header", "true").csv(output_path, mode="overwrite")
