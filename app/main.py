@@ -1,10 +1,24 @@
+import os
+import sys
+
+# Get the directory of the current script
+current_dir = os.path.dirname(os.path.abspath(__file__))
+
+# Add the project root directory to the Python path
+project_root = os.path.abspath(os.path.join(current_dir, '..'))
+sys.path.append(project_root)
+
 from pyspark.sql import SparkSession
-from pyspark.sql.functions import unix_timestamp, first
+from pyspark.sql.functions import unix_timestamp
 from lib.utils import remove_matching_values
 from app.data_processing import polling_events_info, closest_polling_events, closest_conn_status
+from pyspark import StorageLevel
+
 
 # create spark session
+
 spark = SparkSession.builder \
+    .config('spark.driver.host', '192.168.1.62')\
     .config("spark.executor.memory", "4g") \
     .config("spark.driver.memory", "4g") \
     .config("spark.memory.offHeap.enabled", True) \
@@ -43,6 +57,9 @@ df = d.withColumn("pollingCT_orderCT_difference",
                 unix_timestamp("conn_status_creation_time") - unix_timestamp("order_creation_time")
                 )
 
+# rows will be serialized by default
+df.persist(storageLevel=StorageLevel.MEMORY_ONLY)
+
 time_periods = [-180, 180, -3600]
 
 # *********FIRST TASK DF***********
@@ -53,6 +70,8 @@ d_2 = closest_polling_events(df).withColumnRenamed("order_id", "order_id_2")
 
 # *********THIRD TASK DF***********
 d_3 = closest_conn_status(df).withColumnRenamed("order_id", "order_id_3")
+
+df.unpersist()
 
 d_2_columns_to_remove = ["order_creation_time", "device_id", "negative_pollingCT_orderCT_difference",
                          "positive_pollingCT_orderCT_difference"]
@@ -67,9 +86,11 @@ output_df = d_1 \
     .drop("order_id_2", "order_id_3")
 
 output_df.show(10)
+# output_df.explain()
 
-output_path = "../test_dataset/output_dataset"
-output_df.write.option("header", "true").csv(output_path, mode="overwrite")
+
+# output_path = "../test_dataset/output_dataset"
+# output_df.write.option("header", "true").csv(output_path, mode="overwrite")
 
 # HOW TO PRODUCE FINAL SINGLE FORMATTED CSV DATASET
 # final single formatted csv can be produced using the following linux commands in the shell:

@@ -1,0 +1,7 @@
+[2023-08-30T15:28:09.838+0200] {processor.py:157} INFO - Started process (PID=7061) to work on /Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/example_nested_branch_dag.py
+[2023-08-30T15:28:09.839+0200] {processor.py:829} INFO - Processing file /Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/example_nested_branch_dag.py for tasks to queue
+[2023-08-30T15:28:09.839+0200] {logging_mixin.py:151} INFO - [2023-08-30T15:28:09.839+0200] {dagbag.py:539} INFO - Filling up the DagBag from /Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/example_nested_branch_dag.py
+[2023-08-30T15:28:09.854+0200] {processor.py:839} INFO - DAG(s) dict_keys(['example_nested_branch_dag']) retrieved from /Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/example_nested_branch_dag.py
+[2023-08-30T15:28:09.946+0200] {logging_mixin.py:151} INFO - [2023-08-30T15:28:09.946+0200] {dag.py:2907} INFO - Sync 1 DAGs
+[2023-08-30T15:28:09.954+0200] {logging_mixin.py:151} INFO - [2023-08-30T15:28:09.954+0200] {dag.py:3677} INFO - Setting next_dagrun for example_nested_branch_dag to 2023-08-29T00:00:00+00:00, run_after=2023-08-30T00:00:00+00:00
+[2023-08-30T15:28:09.963+0200] {processor.py:179} INFO - Processing /Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/example_nested_branch_dag.py took 0.126 seconds

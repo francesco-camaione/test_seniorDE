@@ -1,0 +1,16 @@
+[2023-08-30T15:51:42.283+0200] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: de_test_workflow.createCSVFile manual__2023-08-30T13:51:23.013405+00:00 [queued]>
+[2023-08-30T15:51:42.288+0200] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: de_test_workflow.createCSVFile manual__2023-08-30T13:51:23.013405+00:00 [queued]>
+[2023-08-30T15:51:42.288+0200] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2023-08-30T15:51:42.295+0200] {taskinstance.py:1382} INFO - Executing <Task(BashOperator): createCSVFile> on 2023-08-30 13:51:23.013405+00:00
+[2023-08-30T15:51:42.297+0200] {standard_task_runner.py:57} INFO - Started process 7830 to run task
+[2023-08-30T15:51:42.299+0200] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'de_test_workflow', 'createCSVFile', 'manual__2023-08-30T13:51:23.013405+00:00', '--job-id', '21', '--raw', '--subdir', '/Users/france.cama/code/glovo_de_test/dags/workflows.py', '--cfg-path', '/var/folders/bq/3fzm19j96pq0b42q_ghqb6j40000gn/T/tmpa34id7mo']
+[2023-08-30T15:51:42.300+0200] {standard_task_runner.py:85} INFO - Job 21: Subtask createCSVFile
+[2023-08-30T15:51:42.342+0200] {task_command.py:415} INFO - Running <TaskInstance: de_test_workflow.createCSVFile manual__2023-08-30T13:51:23.013405+00:00 [running]> on host mba-francesco.local
+[2023-08-30T15:51:42.403+0200] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='francesco' AIRFLOW_CTX_DAG_ID='de_test_workflow' AIRFLOW_CTX_TASK_ID='createCSVFile' AIRFLOW_CTX_EXECUTION_DATE='2023-08-30T13:51:23.013405+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-08-30T13:51:23.013405+00:00'
+[2023-08-30T15:51:42.404+0200] {subprocess.py:63} INFO - Tmp dir root location: /var/folders/bq/3fzm19j96pq0b42q_ghqb6j40000gn/T
+[2023-08-30T15:51:42.404+0200] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'touch /Users/france.cama/code/glovo_de_test/output_dataset/single_output_dataset.csv']
+[2023-08-30T15:51:42.407+0200] {subprocess.py:86} INFO - Output:
+[2023-08-30T15:51:42.415+0200] {subprocess.py:97} INFO - Command exited with return code 0
+[2023-08-30T15:51:42.439+0200] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=de_test_workflow, task_id=createCSVFile, execution_date=20230830T135123, start_date=20230830T135142, end_date=20230830T135142
+[2023-08-30T15:51:42.476+0200] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-08-30T15:51:42.495+0200] {taskinstance.py:2784} INFO - 1 downstream tasks scheduled from follow-on schedule check

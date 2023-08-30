@@ -1,0 +1,7 @@
+[2023-08-30T15:28:13.941+0200] {processor.py:157} INFO - Started process (PID=7074) to work on /Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/example_branch_python_dop_operator_3.py
+[2023-08-30T15:28:13.942+0200] {processor.py:829} INFO - Processing file /Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/example_branch_python_dop_operator_3.py for tasks to queue
+[2023-08-30T15:28:13.942+0200] {logging_mixin.py:151} INFO - [2023-08-30T15:28:13.942+0200] {dagbag.py:539} INFO - Filling up the DagBag from /Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/example_branch_python_dop_operator_3.py
+[2023-08-30T15:28:13.958+0200] {processor.py:839} INFO - DAG(s) dict_keys(['example_branch_dop_operator_v3']) retrieved from /Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/example_branch_python_dop_operator_3.py
+[2023-08-30T15:28:14.047+0200] {logging_mixin.py:151} INFO - [2023-08-30T15:28:14.047+0200] {dag.py:2907} INFO - Sync 1 DAGs
+[2023-08-30T15:28:14.056+0200] {logging_mixin.py:151} INFO - [2023-08-30T15:28:14.056+0200] {dag.py:3677} INFO - Setting next_dagrun for example_branch_dop_operator_v3 to 2023-08-30T13:27:00+00:00, run_after=2023-08-30T13:28:00+00:00
+[2023-08-30T15:28:14.065+0200] {processor.py:179} INFO - Processing /Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/example_branch_python_dop_operator_3.py took 0.124 seconds

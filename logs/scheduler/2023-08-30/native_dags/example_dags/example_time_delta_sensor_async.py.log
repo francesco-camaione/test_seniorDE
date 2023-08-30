@@ -1,0 +1,7 @@
+[2023-08-30T15:28:04.398+0200] {processor.py:157} INFO - Started process (PID=7043) to work on /Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/example_time_delta_sensor_async.py
+[2023-08-30T15:28:04.400+0200] {processor.py:829} INFO - Processing file /Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/example_time_delta_sensor_async.py for tasks to queue
+[2023-08-30T15:28:04.400+0200] {logging_mixin.py:151} INFO - [2023-08-30T15:28:04.400+0200] {dagbag.py:539} INFO - Filling up the DagBag from /Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/example_time_delta_sensor_async.py
+[2023-08-30T15:28:04.405+0200] {processor.py:839} INFO - DAG(s) dict_keys(['example_time_delta_sensor_async']) retrieved from /Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/example_time_delta_sensor_async.py
+[2023-08-30T15:28:04.498+0200] {logging_mixin.py:151} INFO - [2023-08-30T15:28:04.497+0200] {dag.py:2907} INFO - Sync 1 DAGs
+[2023-08-30T15:28:04.502+0200] {logging_mixin.py:151} INFO - [2023-08-30T15:28:04.502+0200] {dag.py:3677} INFO - Setting next_dagrun for example_time_delta_sensor_async to None, run_after=None
+[2023-08-30T15:28:04.512+0200] {processor.py:179} INFO - Processing /Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/example_time_delta_sensor_async.py took 0.114 seconds

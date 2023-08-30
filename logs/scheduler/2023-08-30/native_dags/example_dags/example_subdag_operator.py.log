@@ -1,0 +1,12 @@
+[2023-08-30T15:28:05.421+0200] {processor.py:157} INFO - Started process (PID=7046) to work on /Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/example_subdag_operator.py
+[2023-08-30T15:28:05.423+0200] {processor.py:829} INFO - Processing file /Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/example_subdag_operator.py for tasks to queue
+[2023-08-30T15:28:05.423+0200] {logging_mixin.py:151} INFO - [2023-08-30T15:28:05.423+0200] {dagbag.py:539} INFO - Filling up the DagBag from /Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/example_subdag_operator.py
+[2023-08-30T15:28:05.502+0200] {processor.py:839} INFO - DAG(s) dict_keys(['example_subdag_operator.section-1', 'example_subdag_operator.section-2', 'example_subdag_operator']) retrieved from /Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/example_subdag_operator.py
+[2023-08-30T15:28:05.527+0200] {logging_mixin.py:151} INFO - [2023-08-30T15:28:05.526+0200] {dag.py:2907} INFO - Sync 3 DAGs
+[2023-08-30T15:28:05.534+0200] {logging_mixin.py:151} INFO - [2023-08-30T15:28:05.534+0200] {dag.py:3677} INFO - Setting next_dagrun for example_subdag_operator to 2022-01-01T00:00:00+00:00, run_after=2022-01-01T00:00:00+00:00
+[2023-08-30T15:28:05.535+0200] {logging_mixin.py:151} INFO - [2023-08-30T15:28:05.535+0200] {dag.py:3677} INFO - Setting next_dagrun for example_subdag_operator.section-1 to None, run_after=None
+[2023-08-30T15:28:05.536+0200] {logging_mixin.py:151} INFO - [2023-08-30T15:28:05.536+0200] {dag.py:3677} INFO - Setting next_dagrun for example_subdag_operator.section-2 to None, run_after=None
+[2023-08-30T15:28:05.539+0200] {logging_mixin.py:151} INFO - [2023-08-30T15:28:05.539+0200] {dag.py:2907} INFO - Sync 2 DAGs
+[2023-08-30T15:28:05.541+0200] {logging_mixin.py:151} INFO - [2023-08-30T15:28:05.541+0200] {dag.py:3677} INFO - Setting next_dagrun for example_subdag_operator.section-1 to None, run_after=None
+[2023-08-30T15:28:05.541+0200] {logging_mixin.py:151} INFO - [2023-08-30T15:28:05.541+0200] {dag.py:3677} INFO - Setting next_dagrun for example_subdag_operator.section-2 to None, run_after=None
+[2023-08-30T15:28:05.546+0200] {processor.py:179} INFO - Processing /Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/example_subdag_operator.py took 0.125 seconds

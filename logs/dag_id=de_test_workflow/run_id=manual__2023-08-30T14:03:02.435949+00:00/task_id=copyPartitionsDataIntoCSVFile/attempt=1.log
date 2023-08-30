@@ -1,0 +1,16 @@
+[2023-08-30T16:03:23.169+0200] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: de_test_workflow.copyPartitionsDataIntoCSVFile manual__2023-08-30T14:03:02.435949+00:00 [queued]>
+[2023-08-30T16:03:23.173+0200] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: de_test_workflow.copyPartitionsDataIntoCSVFile manual__2023-08-30T14:03:02.435949+00:00 [queued]>
+[2023-08-30T16:03:23.174+0200] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2023-08-30T16:03:23.180+0200] {taskinstance.py:1382} INFO - Executing <Task(BashOperator): copyPartitionsDataIntoCSVFile> on 2023-08-30 14:03:02.435949+00:00
+[2023-08-30T16:03:23.182+0200] {standard_task_runner.py:57} INFO - Started process 8228 to run task
+[2023-08-30T16:03:23.184+0200] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'de_test_workflow', 'copyPartitionsDataIntoCSVFile', 'manual__2023-08-30T14:03:02.435949+00:00', '--job-id', '26', '--raw', '--subdir', '/Users/france.cama/code/glovo_de_test/dags/workflows.py', '--cfg-path', '/var/folders/bq/3fzm19j96pq0b42q_ghqb6j40000gn/T/tmp1z8_8mfr']
+[2023-08-30T16:03:23.185+0200] {standard_task_runner.py:85} INFO - Job 26: Subtask copyPartitionsDataIntoCSVFile
+[2023-08-30T16:03:23.222+0200] {task_command.py:415} INFO - Running <TaskInstance: de_test_workflow.copyPartitionsDataIntoCSVFile manual__2023-08-30T14:03:02.435949+00:00 [running]> on host mba-francesco.local
+[2023-08-30T16:03:23.279+0200] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='francesco' AIRFLOW_CTX_DAG_ID='de_test_workflow' AIRFLOW_CTX_TASK_ID='copyPartitionsDataIntoCSVFile' AIRFLOW_CTX_EXECUTION_DATE='2023-08-30T14:03:02.435949+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-08-30T14:03:02.435949+00:00'
+[2023-08-30T16:03:23.280+0200] {subprocess.py:63} INFO - Tmp dir root location: /var/folders/bq/3fzm19j96pq0b42q_ghqb6j40000gn/T
+[2023-08-30T16:03:23.280+0200] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'cat /Users/france.cama/code/glovo_de_test/output_dataset/*.csv >> /Users/france.cama/code/glovo_de_test/output_dataset/single_output_dataset_20230830.csv']
+[2023-08-30T16:03:23.283+0200] {subprocess.py:86} INFO - Output:
+[2023-08-30T16:03:23.291+0200] {subprocess.py:97} INFO - Command exited with return code 0
+[2023-08-30T16:03:23.317+0200] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=de_test_workflow, task_id=copyPartitionsDataIntoCSVFile, execution_date=20230830T140302, start_date=20230830T140323, end_date=20230830T140323
+[2023-08-30T16:03:23.362+0200] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-08-30T16:03:23.378+0200] {taskinstance.py:2784} INFO - 0 downstream tasks scheduled from follow-on schedule check

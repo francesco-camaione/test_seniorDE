@@ -92,7 +92,7 @@ def polling_events_info(d: DataFrame, periods: List[int]) -> DataFrame:
             concat_ws(", ", collect_set(when(time_condition, col("status_code")).otherwise(lit(""))).over(window_spec))
         ).withColumn(
             f"count_typeof_error_c{suffix}",
-            concat_ws(", ", collect_set(when(time_condition, col("error_code")).otherwise(lit(""))).over(window_spec))
+            concat_ws(", ", collect_set(when(time_condition, col("error_code")).otherwise(0)).over(window_spec))
         ).withColumn(
             f"ok_responses{suffix}",
             sum(when(time_condition & (col("status_code") == 200), 1).otherwise(0)).over(window_spec)

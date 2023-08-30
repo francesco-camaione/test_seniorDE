@@ -1,0 +1,12 @@
+[2023-08-30T15:27:59.940+0200] {processor.py:157} INFO - Started process (PID=7026) to work on /Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/plugins/workday.py
+[2023-08-30T15:27:59.941+0200] {processor.py:829} INFO - Processing file /Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/plugins/workday.py for tasks to queue
+[2023-08-30T15:27:59.942+0200] {logging_mixin.py:151} INFO - [2023-08-30T15:27:59.942+0200] {dagbag.py:539} INFO - Filling up the DagBag from /Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/plugins/workday.py
+[2023-08-30T15:27:59.942+0200] {logging_mixin.py:151} INFO - [2023-08-30T15:27:59.942+0200] {workday.py:36} WARNING - Could not import pandas. Holidays will not be considered.
+[2023-08-30T15:27:59.942+0200] {processor.py:841} WARNING - No viable dags retrieved from /Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/plugins/workday.py
+[2023-08-30T15:28:00.062+0200] {processor.py:179} INFO - Processing /Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/plugins/workday.py took 0.122 seconds
+[2023-08-30T15:28:31.111+0200] {processor.py:157} INFO - Started process (PID=7110) to work on /Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/plugins/workday.py
+[2023-08-30T15:28:31.113+0200] {processor.py:829} INFO - Processing file /Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/plugins/workday.py for tasks to queue
+[2023-08-30T15:28:31.113+0200] {logging_mixin.py:151} INFO - [2023-08-30T15:28:31.113+0200] {dagbag.py:539} INFO - Filling up the DagBag from /Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/plugins/workday.py
+[2023-08-30T15:28:31.114+0200] {logging_mixin.py:151} INFO - [2023-08-30T15:28:31.114+0200] {workday.py:36} WARNING - Could not import pandas. Holidays will not be considered.
+[2023-08-30T15:28:31.114+0200] {processor.py:841} WARNING - No viable dags retrieved from /Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/plugins/workday.py
+[2023-08-30T15:28:31.205+0200] {processor.py:179} INFO - Processing /Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/plugins/workday.py took 0.094 seconds

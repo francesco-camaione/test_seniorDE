@@ -1,0 +1,10 @@
+[2023-08-30T15:27:59.940+0200] {processor.py:157} INFO - Started process (PID=7025) to work on /Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-30T15:27:59.943+0200] {processor.py:829} INFO - Processing file /Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/subdags/subdag.py for tasks to queue
+[2023-08-30T15:27:59.943+0200] {logging_mixin.py:151} INFO - [2023-08-30T15:27:59.943+0200] {dagbag.py:539} INFO - Filling up the DagBag from /Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-30T15:27:59.944+0200] {processor.py:841} WARNING - No viable dags retrieved from /Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-30T15:28:00.061+0200] {processor.py:179} INFO - Processing /Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/subdags/subdag.py took 0.122 seconds
+[2023-08-30T15:28:31.111+0200] {processor.py:157} INFO - Started process (PID=7109) to work on /Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-30T15:28:31.113+0200] {processor.py:829} INFO - Processing file /Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/subdags/subdag.py for tasks to queue
+[2023-08-30T15:28:31.113+0200] {logging_mixin.py:151} INFO - [2023-08-30T15:28:31.113+0200] {dagbag.py:539} INFO - Filling up the DagBag from /Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-30T15:28:31.114+0200] {processor.py:841} WARNING - No viable dags retrieved from /Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-30T15:28:31.205+0200] {processor.py:179} INFO - Processing /Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/subdags/subdag.py took 0.094 seconds

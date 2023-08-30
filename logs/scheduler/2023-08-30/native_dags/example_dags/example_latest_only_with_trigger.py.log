@@ -1,0 +1,7 @@
+[2023-08-30T15:28:10.513+0200] {processor.py:157} INFO - Started process (PID=7065) to work on /Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/example_latest_only_with_trigger.py
+[2023-08-30T15:28:10.514+0200] {processor.py:829} INFO - Processing file /Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/example_latest_only_with_trigger.py for tasks to queue
+[2023-08-30T15:28:10.515+0200] {logging_mixin.py:151} INFO - [2023-08-30T15:28:10.515+0200] {dagbag.py:539} INFO - Filling up the DagBag from /Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/example_latest_only_with_trigger.py
+[2023-08-30T15:28:10.520+0200] {processor.py:839} INFO - DAG(s) dict_keys(['latest_only_with_trigger']) retrieved from /Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/example_latest_only_with_trigger.py
+[2023-08-30T15:28:10.611+0200] {logging_mixin.py:151} INFO - [2023-08-30T15:28:10.611+0200] {dag.py:2907} INFO - Sync 1 DAGs
+[2023-08-30T15:28:10.619+0200] {logging_mixin.py:151} INFO - [2023-08-30T15:28:10.618+0200] {dag.py:3677} INFO - Setting next_dagrun for latest_only_with_trigger to 2023-08-30T09:28:10.618886+00:00, run_after=2023-08-30T13:28:10.618886+00:00
+[2023-08-30T15:28:10.628+0200] {processor.py:179} INFO - Processing /Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/example_latest_only_with_trigger.py took 0.115 seconds

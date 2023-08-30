@@ -1,0 +1,827 @@
+[2023-08-30T14:53:46.260+0200] {manager.py:488} INFO - Processing files using up to 2 processes at a time 
+[2023-08-30T14:53:46.260+0200] {manager.py:489} INFO - Process each file at most once every 30 seconds
+[2023-08-30T14:53:46.260+0200] {manager.py:490} INFO - Checking for new files in /Users/france.cama/code/glovo_de_test/dags every 300 seconds
+[2023-08-30T14:53:46.260+0200] {manager.py:760} INFO - Searching for files in /Users/france.cama/code/glovo_de_test/dags
+[2023-08-30T14:53:46.262+0200] {manager.py:763} INFO - There are 1 files in /Users/france.cama/code/glovo_de_test/dags
+[2023-08-30T14:53:46.347+0200] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                  PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/Users/france.cama/code/glovo_de_test/dags/workflows.py   5063  0.01s             0           0
+================================================================================
+[2023-08-30T14:53:57.841+0200] {manager.py:470} INFO - Exiting gracefully upon receiving signal 15
+[2023-08-30T14:58:02.706+0200] {manager.py:488} INFO - Processing files using up to 2 processes at a time 
+[2023-08-30T14:58:02.706+0200] {manager.py:489} INFO - Process each file at most once every 30 seconds
+[2023-08-30T14:58:02.706+0200] {manager.py:490} INFO - Checking for new files in /Users/france.cama/code/glovo_de_test/dags every 300 seconds
+[2023-08-30T14:58:02.706+0200] {manager.py:760} INFO - Searching for files in /Users/france.cama/code/glovo_de_test/dags
+[2023-08-30T14:58:02.707+0200] {manager.py:763} INFO - There are 1 files in /Users/france.cama/code/glovo_de_test/dags
+[2023-08-30T14:58:02.797+0200] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                  PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/Users/france.cama/code/glovo_de_test/dags/workflows.py   5312  0.01s             0           0
+================================================================================
+[2023-08-30T14:58:24.367+0200] {manager.py:470} INFO - Exiting gracefully upon receiving signal 15
+[2023-08-30T14:58:37.151+0200] {manager.py:488} INFO - Processing files using up to 2 processes at a time 
+[2023-08-30T14:58:37.151+0200] {manager.py:489} INFO - Process each file at most once every 30 seconds
+[2023-08-30T14:58:37.151+0200] {manager.py:490} INFO - Checking for new files in /Users/france.cama/code/glovo_de_test/dags every 300 seconds
+[2023-08-30T14:58:37.151+0200] {manager.py:760} INFO - Searching for files in /Users/france.cama/code/glovo_de_test/dags
+[2023-08-30T14:58:37.151+0200] {manager.py:763} INFO - There are 1 files in /Users/france.cama/code/glovo_de_test/dags
+[2023-08-30T14:58:37.240+0200] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                  PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/Users/france.cama/code/glovo_de_test/dags/workflows.py   5354  0.01s             0           0
+================================================================================
+[2023-08-30T14:58:41.445+0200] {manager.py:470} INFO - Exiting gracefully upon receiving signal 15
+[2023-08-30T15:02:15.133+0200] {manager.py:488} INFO - Processing files using up to 2 processes at a time 
+[2023-08-30T15:02:15.133+0200] {manager.py:489} INFO - Process each file at most once every 30 seconds
+[2023-08-30T15:02:15.133+0200] {manager.py:490} INFO - Checking for new files in /Users/france.cama/code/glovo_de_test/dags every 300 seconds
+[2023-08-30T15:02:15.133+0200] {manager.py:760} INFO - Searching for files in /Users/france.cama/code/glovo_de_test/dags
+[2023-08-30T15:02:15.134+0200] {manager.py:763} INFO - There are 1 files in /Users/france.cama/code/glovo_de_test/dags
+[2023-08-30T15:02:15.219+0200] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                  PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/Users/france.cama/code/glovo_de_test/dags/workflows.py   5606  0.01s             0           0
+================================================================================
+[2023-08-30T15:02:26.479+0200] {manager.py:470} INFO - Exiting gracefully upon receiving signal 15
+[2023-08-30T15:03:03.335+0200] {manager.py:488} INFO - Processing files using up to 2 processes at a time 
+[2023-08-30T15:03:03.335+0200] {manager.py:489} INFO - Process each file at most once every 30 seconds
+[2023-08-30T15:03:03.335+0200] {manager.py:490} INFO - Checking for new files in /Users/france.cama/code/glovo_de_test/dags every 300 seconds
+[2023-08-30T15:03:03.335+0200] {manager.py:760} INFO - Searching for files in /Users/france.cama/code/glovo_de_test/dags
+[2023-08-30T15:03:03.336+0200] {manager.py:763} INFO - There are 1 files in /Users/france.cama/code/glovo_de_test/dags
+[2023-08-30T15:03:03.415+0200] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                  PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/Users/france.cama/code/glovo_de_test/dags/workflows.py   5690  0.01s             0           0
+================================================================================
+[2023-08-30T15:03:33.544+0200] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/france.cama/code/glovo_de_test/dags/workflows.py                           1           0  0.66s           2023-08-30T13:03:04
+================================================================================
+[2023-08-30T15:04:03.700+0200] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/france.cama/code/glovo_de_test/dags/workflows.py                           1           0  0.77s           2023-08-30T13:03:34
+================================================================================
+[2023-08-30T15:04:33.840+0200] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/france.cama/code/glovo_de_test/dags/workflows.py                           1           0  0.68s           2023-08-30T13:04:05
+================================================================================
+[2023-08-30T15:05:04.041+0200] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/france.cama/code/glovo_de_test/dags/workflows.py                           1           0  0.65s           2023-08-30T13:04:36
+================================================================================
+[2023-08-30T15:05:32.160+0200] {manager.py:470} INFO - Exiting gracefully upon receiving signal 15
+[2023-08-30T15:27:59.012+0200] {manager.py:488} INFO - Processing files using up to 2 processes at a time 
+[2023-08-30T15:27:59.012+0200] {manager.py:489} INFO - Process each file at most once every 30 seconds
+[2023-08-30T15:27:59.012+0200] {manager.py:490} INFO - Checking for new files in /Users/france.cama/code/glovo_de_test/dags every 300 seconds
+[2023-08-30T15:27:59.012+0200] {manager.py:760} INFO - Searching for files in /Users/france.cama/code/glovo_de_test/dags
+[2023-08-30T15:27:59.025+0200] {manager.py:763} INFO - There are 47 files in /Users/france.cama/code/glovo_de_test/dags
+[2023-08-30T15:27:59.198+0200] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                                                                  PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/Users/france.cama/code/glovo_de_test/dags/workflows.py                                                                                                                           0           0
+/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/example_latest_only.py                                                               0           0
+/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/example_local_kubernetes_executor.py                                                 0           0
+/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/example_task_group_decorator.py                                                      0           0
+/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/example_complex.py                                                                   0           0
+/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/example_python_operator.py                                                           0           0
+/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py                                                  0           0
+/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/example_params_trigger_ui.py                                                         0           0
+/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/example_external_task_marker_dag.py                                                  0           0
+/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/example_bash_operator.py                                                             0           0
+/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/example_short_circuit_operator.py                                                    0           0
+/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/example_setup_teardown.py                                                            0           0
+/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py                                                           0           0
+/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/example_branch_labels.py                                                             0           0
+/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/tutorial_taskflow_api.py                                                             0           0
+/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/example_task_group.py                                                                0           0
+/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/tutorial.py                                                                          0           0
+/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/example_sla_dag.py                                                                   0           0
+/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/example_passing_params_via_test_command.py                                           0           0
+/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/example_latest_only_with_trigger.py                                                  0           0
+/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/example_time_delta_sensor_async.py                                                   0           0
+/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/example_dag_decorator.py                                                             0           0
+/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/example_xcom.py                                                                      0           0
+/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/example_xcomargs.py                                                                  0           0
+/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator_decorator.py                                                 0           0
+/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py                                               0           0
+/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/example_skip_dag.py                                                                  0           0
+/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/example_short_circuit_decorator.py                                                   0           0
+/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/example_datasets.py                                                                  0           0
+/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py                                                                      0           0
+/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/example_trigger_target_dag.py                                                        0           0
+/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/example_sensor_decorator.py                                                          0           0
+/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/example_kubernetes_executor.py                                                       0           0
+/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/example_branch_python_dop_operator_3.py                                              0           0
+/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/example_sensors.py                                                                   0           0
+/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/example_setup_teardown_taskflow.py                                                   0           0
+/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/example_branch_datetime_operator.py                                                  0           0
+/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/example_nested_branch_dag.py                                                         0           0
+/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/example_subdag_operator.py                                                           0           0
+/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/example_dynamic_task_mapping_with_no_taskflow_operators.py                           0           0
+/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/example_trigger_controller_dag.py                                                    0           0
+/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/example_params_ui_tutorial.py                                                        0           0
+/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/example_dynamic_task_mapping.py                                                      0           0
+/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/plugins/workday.py                                           7026  0.05s             0           0
+/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/plugins/event_listener.py                                                            0           0
+/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/plugins/listener_plugin.py                                                           0           0
+/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/subdags/subdag.py                                            7025  0.05s             0           0
+================================================================================
+[2023-08-30T15:28:29.320+0200] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/example_local_kubernetes_executor.py                                                 0           0  0.64s           2023-08-30T13:28:10
+/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py                                                  0           0  0.68s           2023-08-30T13:28:01
+/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/example_kubernetes_executor.py                                                       0           0  0.62s           2023-08-30T13:28:11
+/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/plugins/workday.py                                                                   0           0  1.14s           2023-08-30T13:28:00
+/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/plugins/event_listener.py                                                            0           0  0.68s           2023-08-30T13:28:01
+/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/plugins/listener_plugin.py                                                           0           0  0.63s           2023-08-30T13:28:00
+/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/subdags/subdag.py                                                                    0           0  1.14s           2023-08-30T13:28:00
+/Users/france.cama/code/glovo_de_test/dags/workflows.py                                                                                                                           1           0  0.83s           2023-08-30T13:28:16
+/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/example_latest_only.py                                                               1           0  0.65s           2023-08-30T13:28:11
+/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/example_task_group_decorator.py                                                      1           0  0.68s           2023-08-30T13:28:04
+/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/example_complex.py                                                                   1           0  0.71s           2023-08-30T13:28:13
+/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/example_python_operator.py                                                           1           0  0.66s           2023-08-30T13:28:08
+/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/example_params_trigger_ui.py                                                         1           0  0.70s           2023-08-30T13:28:09
+/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/example_bash_operator.py                                                             1           0  0.68s           2023-08-30T13:28:16
+/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/example_short_circuit_operator.py                                                    1           0  0.67s           2023-08-30T13:28:06
+/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/example_setup_teardown.py                                                            1           0  0.73s           2023-08-30T13:28:07
+/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py                                                           1           0  0.67s           2023-08-30T13:28:14
+/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/example_branch_labels.py                                                             1           0  0.69s           2023-08-30T13:28:15
+/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/tutorial_taskflow_api.py                                                             1           0  0.74s           2023-08-30T13:28:02
+/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/example_task_group.py                                                                1           0  0.65s           2023-08-30T13:28:05
+/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/tutorial.py                                                                          1           0  0.65s           2023-08-30T13:28:02
+/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/example_sla_dag.py                                                                   1           0  0.66s           2023-08-30T13:28:05
+/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/example_passing_params_via_test_command.py                                           1           0  0.66s           2023-08-30T13:28:09
+/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/example_latest_only_with_trigger.py                                                  1           0  0.66s           2023-08-30T13:28:10
+/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/example_time_delta_sensor_async.py                                                   1           0  0.65s           2023-08-30T13:28:04
+/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/example_dag_decorator.py                                                             1           0  1.03s           2023-08-30T13:28:13
+/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/example_xcom.py                                                                      1           0  0.66s           2023-08-30T13:28:03
+/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator_decorator.py                                                 1           0  0.74s           2023-08-30T13:28:14
+/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py                                               1           0  0.68s           2023-08-30T13:28:15
+/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/example_skip_dag.py                                                                  1           0  0.65s           2023-08-30T13:28:06
+/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/example_short_circuit_decorator.py                                                   1           0  0.67s           2023-08-30T13:28:06
+/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py                                                                      1           0  0.71s           2023-08-30T13:28:02
+/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/example_trigger_target_dag.py                                                        1           0  0.67s           2023-08-30T13:28:03
+/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/example_sensor_decorator.py                                                          1           0  0.67s           2023-08-30T13:28:08
+/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/example_branch_python_dop_operator_3.py                                              1           0  0.76s           2023-08-30T13:28:14
+/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/example_sensors.py                                                                   1           0  0.72s           2023-08-30T13:28:08
+/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/example_setup_teardown_taskflow.py                                                   1           0  0.69s           2023-08-30T13:28:07
+/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/example_nested_branch_dag.py                                                         1           0  0.69s           2023-08-30T13:28:10
+/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/example_dynamic_task_mapping_with_no_taskflow_operators.py                           1           0  0.68s           2023-08-30T13:28:12
+/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/example_trigger_controller_dag.py                                                    1           0  0.65s           2023-08-30T13:28:04
+/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/example_params_ui_tutorial.py                                                        1           0  0.69s           2023-08-30T13:28:09
+/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/example_dynamic_task_mapping.py                                                      1           0  0.69s           2023-08-30T13:28:12
+/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/example_external_task_marker_dag.py                                                  2           0  0.68s           2023-08-30T13:28:11
+/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/example_xcomargs.py                                                                  2           0  0.66s           2023-08-30T13:28:03
+/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/example_branch_datetime_operator.py                                                  3           0  0.70s           2023-08-30T13:28:15
+/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/example_subdag_operator.py                                                           3           0  0.66s           2023-08-30T13:28:05
+/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/example_datasets.py                                                                  6           0  0.70s           2023-08-30T13:28:12
+================================================================================
+[2023-08-30T15:28:32.737+0200] {manager.py:470} INFO - Exiting gracefully upon receiving signal 15
+[2023-08-30T15:28:45.607+0200] {manager.py:488} INFO - Processing files using up to 2 processes at a time 
+[2023-08-30T15:28:45.607+0200] {manager.py:489} INFO - Process each file at most once every 30 seconds
+[2023-08-30T15:28:45.607+0200] {manager.py:490} INFO - Checking for new files in /Users/france.cama/code/glovo_de_test/dags every 300 seconds
+[2023-08-30T15:28:45.607+0200] {manager.py:760} INFO - Searching for files in /Users/france.cama/code/glovo_de_test/dags
+[2023-08-30T15:28:45.608+0200] {manager.py:763} INFO - There are 1 files in /Users/france.cama/code/glovo_de_test/dags
+[2023-08-30T15:28:45.709+0200] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                  PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/Users/france.cama/code/glovo_de_test/dags/workflows.py   7167  0.01s             0           0
+================================================================================
+[2023-08-30T15:29:15.858+0200] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/france.cama/code/glovo_de_test/dags/workflows.py                           1           0  0.63s           2023-08-30T13:28:46
+================================================================================
+[2023-08-30T15:29:46.031+0200] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/france.cama/code/glovo_de_test/dags/workflows.py                           1           0  0.85s           2023-08-30T13:29:17
+================================================================================
+[2023-08-30T15:30:16.213+0200] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/france.cama/code/glovo_de_test/dags/workflows.py                           1           0  0.83s           2023-08-30T13:29:48
+================================================================================
+[2023-08-30T15:30:46.412+0200] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/france.cama/code/glovo_de_test/dags/workflows.py                           1           0  0.87s           2023-08-30T13:30:19
+================================================================================
+[2023-08-30T15:31:16.785+0200] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/france.cama/code/glovo_de_test/dags/workflows.py                           1           0  0.74s           2023-08-30T13:30:50
+================================================================================
+[2023-08-30T15:31:46.982+0200] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/france.cama/code/glovo_de_test/dags/workflows.py                           1           0  0.74s           2023-08-30T13:31:21
+================================================================================
+[2023-08-30T15:32:17.131+0200] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/france.cama/code/glovo_de_test/dags/workflows.py                           1           0  0.65s           2023-08-30T13:31:51
+================================================================================
+[2023-08-30T15:32:47.169+0200] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/france.cama/code/glovo_de_test/dags/workflows.py                           1           0  0.87s           2023-08-30T13:32:23
+================================================================================
+[2023-08-30T15:33:17.291+0200] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/france.cama/code/glovo_de_test/dags/workflows.py                           1           0  0.95s           2023-08-30T13:32:54
+================================================================================
+[2023-08-30T15:33:46.058+0200] {manager.py:760} INFO - Searching for files in /Users/france.cama/code/glovo_de_test/dags
+[2023-08-30T15:33:46.063+0200] {manager.py:763} INFO - There are 1 files in /Users/france.cama/code/glovo_de_test/dags
+[2023-08-30T15:33:48.103+0200] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/france.cama/code/glovo_de_test/dags/workflows.py                           1           0  0.66s           2023-08-30T13:33:24
+================================================================================
+[2023-08-30T15:34:18.309+0200] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/france.cama/code/glovo_de_test/dags/workflows.py                           1           0  0.75s           2023-08-30T13:33:55
+================================================================================
+[2023-08-30T15:34:48.466+0200] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/france.cama/code/glovo_de_test/dags/workflows.py                           1           0  0.98s           2023-08-30T13:34:36
+================================================================================
+[2023-08-30T15:35:19.039+0200] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/france.cama/code/glovo_de_test/dags/workflows.py                           1           0  0.85s           2023-08-30T13:35:07
+================================================================================
+[2023-08-30T15:35:49.224+0200] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/france.cama/code/glovo_de_test/dags/workflows.py                           1           0  0.64s           2023-08-30T13:35:38
+================================================================================
+[2023-08-30T15:36:19.422+0200] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/france.cama/code/glovo_de_test/dags/workflows.py                           1           0  0.67s           2023-08-30T13:36:09
+================================================================================
+[2023-08-30T15:36:49.549+0200] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/france.cama/code/glovo_de_test/dags/workflows.py                           1           0  0.94s           2023-08-30T13:36:48
+================================================================================
+[2023-08-30T15:37:20.015+0200] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/france.cama/code/glovo_de_test/dags/workflows.py                           1           0  0.84s           2023-08-30T13:37:19
+================================================================================
+[2023-08-30T15:37:50.189+0200] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                  PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/france.cama/code/glovo_de_test/dags/workflows.py   7416  0.52s             1           0  0.84s           2023-08-30T13:37:19
+================================================================================
+[2023-08-30T15:38:20.390+0200] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                  PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/france.cama/code/glovo_de_test/dags/workflows.py   7424  0.01s             1           0  0.64s           2023-08-30T13:37:50
+================================================================================
+[2023-08-30T15:38:46.176+0200] {manager.py:760} INFO - Searching for files in /Users/france.cama/code/glovo_de_test/dags
+[2023-08-30T15:38:46.177+0200] {manager.py:763} INFO - There are 1 files in /Users/france.cama/code/glovo_de_test/dags
+[2023-08-30T15:38:50.553+0200] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/france.cama/code/glovo_de_test/dags/workflows.py                           1           0  0.91s           2023-08-30T13:38:40
+================================================================================
+[2023-08-30T15:39:20.664+0200] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/france.cama/code/glovo_de_test/dags/workflows.py                           1           0  1.03s           2023-08-30T13:39:11
+================================================================================
+[2023-08-30T15:39:50.771+0200] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/france.cama/code/glovo_de_test/dags/workflows.py                           1           0  0.86s           2023-08-30T13:39:42
+================================================================================
+[2023-08-30T15:40:20.883+0200] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/france.cama/code/glovo_de_test/dags/workflows.py                           1           0  2.38s           2023-08-30T13:40:15
+================================================================================
+[2023-08-30T15:40:50.979+0200] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/france.cama/code/glovo_de_test/dags/workflows.py                           1           0  1.75s           2023-08-30T13:40:46
+================================================================================
+[2023-08-30T15:41:21.102+0200] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                  PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/france.cama/code/glovo_de_test/dags/workflows.py   7557  4.01s             1           0  1.75s           2023-08-30T13:40:46
+================================================================================
+[2023-08-30T15:41:51.234+0200] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/france.cama/code/glovo_de_test/dags/workflows.py                           1           0  6.03s           2023-08-30T13:41:23
+================================================================================
+[2023-08-30T15:42:22.222+0200] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/france.cama/code/glovo_de_test/dags/workflows.py                           1           0  5.94s           2023-08-30T13:41:59
+================================================================================
+[2023-08-30T15:42:52.308+0200] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/france.cama/code/glovo_de_test/dags/workflows.py                           1           0  0.89s           2023-08-30T13:42:30
+================================================================================
+[2023-08-30T15:43:22.642+0200] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/france.cama/code/glovo_de_test/dags/workflows.py                           1           0  0.70s           2023-08-30T13:43:01
+================================================================================
+[2023-08-30T15:43:46.781+0200] {manager.py:760} INFO - Searching for files in /Users/france.cama/code/glovo_de_test/dags
+[2023-08-30T15:43:46.789+0200] {manager.py:763} INFO - There are 1 files in /Users/france.cama/code/glovo_de_test/dags
+[2023-08-30T15:43:52.841+0200] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/france.cama/code/glovo_de_test/dags/workflows.py                           1           0  0.81s           2023-08-30T13:43:32
+================================================================================
+[2023-08-30T15:44:23.085+0200] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/france.cama/code/glovo_de_test/dags/workflows.py                           1           0  0.66s           2023-08-30T13:44:20
+================================================================================
+[2023-08-30T15:44:53.612+0200] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/france.cama/code/glovo_de_test/dags/workflows.py                           1           0  0.64s           2023-08-30T13:44:50
+================================================================================
+[2023-08-30T15:45:23.801+0200] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/france.cama/code/glovo_de_test/dags/workflows.py                           1           0  0.68s           2023-08-30T13:45:21
+================================================================================
+[2023-08-30T15:45:54.302+0200] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/france.cama/code/glovo_de_test/dags/workflows.py                           1           0  0.64s           2023-08-30T13:45:52
+================================================================================
+[2023-08-30T15:46:24.336+0200] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/france.cama/code/glovo_de_test/dags/workflows.py                           0           1  0.85s           2023-08-30T13:46:18
+================================================================================
+[2023-08-30T15:46:54.975+0200] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/france.cama/code/glovo_de_test/dags/workflows.py                           0           1  0.70s           2023-08-30T13:46:49
+================================================================================
+[2023-08-30T15:47:25.159+0200] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/france.cama/code/glovo_de_test/dags/workflows.py                           0           1  0.77s           2023-08-30T13:47:20
+================================================================================
+[2023-08-30T15:47:55.384+0200] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/france.cama/code/glovo_de_test/dags/workflows.py                           0           1  0.61s           2023-08-30T13:47:50
+================================================================================
+[2023-08-30T15:48:25.594+0200] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/france.cama/code/glovo_de_test/dags/workflows.py                           0           1  0.61s           2023-08-30T13:48:21
+================================================================================
+[2023-08-30T15:48:46.941+0200] {manager.py:760} INFO - Searching for files in /Users/france.cama/code/glovo_de_test/dags
+[2023-08-30T15:48:46.945+0200] {manager.py:763} INFO - There are 1 files in /Users/france.cama/code/glovo_de_test/dags
+[2023-08-30T15:48:55.608+0200] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/france.cama/code/glovo_de_test/dags/workflows.py                           0           1  0.59s           2023-08-30T13:48:52
+================================================================================
+[2023-08-30T15:49:25.717+0200] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/france.cama/code/glovo_de_test/dags/workflows.py                           1           0  0.94s           2023-08-30T13:49:14
+================================================================================
+[2023-08-30T15:49:56.302+0200] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/france.cama/code/glovo_de_test/dags/workflows.py                           1           0  7.66s           2023-08-30T13:49:52
+================================================================================
+[2023-08-30T15:50:26.423+0200] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                  PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/france.cama/code/glovo_de_test/dags/workflows.py   7783  3.85s             1           0  7.66s           2023-08-30T13:49:52
+================================================================================
+[2023-08-30T15:50:57.025+0200] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/france.cama/code/glovo_de_test/dags/workflows.py                           1           0  8.70s           2023-08-30T13:50:31
+================================================================================
+[2023-08-30T15:51:27.525+0200] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/france.cama/code/glovo_de_test/dags/workflows.py                           1           0  6.23s           2023-08-30T13:51:07
+================================================================================
+[2023-08-30T15:51:57.635+0200] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/france.cama/code/glovo_de_test/dags/workflows.py                           1           0  0.97s           2023-08-30T13:51:38
+================================================================================
+[2023-08-30T15:52:27.923+0200] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/france.cama/code/glovo_de_test/dags/workflows.py                           1           0  2.54s           2023-08-30T13:52:11
+================================================================================
+[2023-08-30T15:52:58.579+0200] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/france.cama/code/glovo_de_test/dags/workflows.py                           1           0  5.35s           2023-08-30T13:52:46
+================================================================================
+[2023-08-30T15:53:29.018+0200] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/france.cama/code/glovo_de_test/dags/workflows.py                           1           0  7.35s           2023-08-30T13:53:24
+================================================================================
+[2023-08-30T15:53:47.093+0200] {manager.py:760} INFO - Searching for files in /Users/france.cama/code/glovo_de_test/dags
+[2023-08-30T15:53:47.139+0200] {manager.py:763} INFO - There are 1 files in /Users/france.cama/code/glovo_de_test/dags
+[2023-08-30T15:53:59.190+0200] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                  PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/france.cama/code/glovo_de_test/dags/workflows.py   7910  4.76s             1           0  7.35s           2023-08-30T13:53:24
+================================================================================
+[2023-08-30T15:54:29.552+0200] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/france.cama/code/glovo_de_test/dags/workflows.py                           1           0  5.42s           2023-08-30T13:53:59
+================================================================================
+[2023-08-30T15:54:59.672+0200] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/france.cama/code/glovo_de_test/dags/workflows.py                           1           0  5.67s           2023-08-30T13:54:35
+================================================================================
+[2023-08-30T15:55:29.848+0200] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/france.cama/code/glovo_de_test/dags/workflows.py                           1           0  5.42s           2023-08-30T13:55:11
+================================================================================
+[2023-08-30T15:56:00.032+0200] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/france.cama/code/glovo_de_test/dags/workflows.py                           1           0  0.87s           2023-08-30T13:55:42
+================================================================================
+[2023-08-30T15:56:30.125+0200] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/france.cama/code/glovo_de_test/dags/workflows.py                           1           0  0.66s           2023-08-30T13:56:13
+================================================================================
+[2023-08-30T15:57:00.657+0200] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/france.cama/code/glovo_de_test/dags/workflows.py                           1           0  0.69s           2023-08-30T13:56:43
+================================================================================
+[2023-08-30T15:57:30.859+0200] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/france.cama/code/glovo_de_test/dags/workflows.py                           1           0  1.11s           2023-08-30T13:57:29
+================================================================================
+[2023-08-30T15:58:00.904+0200] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/france.cama/code/glovo_de_test/dags/workflows.py                           1           0  0.88s           2023-08-30T13:58:00
+================================================================================
+[2023-08-30T15:58:31.076+0200] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                  PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/france.cama/code/glovo_de_test/dags/workflows.py   8097  0.00s             1           0  0.88s           2023-08-30T13:58:00
+================================================================================
+[2023-08-30T15:58:47.319+0200] {manager.py:760} INFO - Searching for files in /Users/france.cama/code/glovo_de_test/dags
+[2023-08-30T15:58:47.319+0200] {manager.py:763} INFO - There are 1 files in /Users/france.cama/code/glovo_de_test/dags
+[2023-08-30T15:59:01.893+0200] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/france.cama/code/glovo_de_test/dags/workflows.py                           1           0  0.65s           2023-08-30T13:58:49
+================================================================================
+[2023-08-30T15:59:32.230+0200] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/france.cama/code/glovo_de_test/dags/workflows.py                           0           1  0.91s           2023-08-30T13:59:28
+================================================================================
+[2023-08-30T16:00:02.434+0200] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/france.cama/code/glovo_de_test/dags/workflows.py                           0           1  0.67s           2023-08-30T13:59:59
+================================================================================
+[2023-08-30T16:00:32.835+0200] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/france.cama/code/glovo_de_test/dags/workflows.py                           0           1  0.60s           2023-08-30T14:00:30
+================================================================================
+[2023-08-30T16:01:03.031+0200] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/france.cama/code/glovo_de_test/dags/workflows.py                           0           1  0.76s           2023-08-30T14:01:01
+================================================================================
+[2023-08-30T16:01:33.399+0200] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/france.cama/code/glovo_de_test/dags/workflows.py                           0           1  0.62s           2023-08-30T14:01:31
+================================================================================
+[2023-08-30T16:02:03.586+0200] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/france.cama/code/glovo_de_test/dags/workflows.py                           0           1  0.72s           2023-08-30T14:02:02
+================================================================================
+[2023-08-30T16:02:33.907+0200] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/france.cama/code/glovo_de_test/dags/workflows.py                           0           1  0.70s           2023-08-30T14:02:33
+================================================================================
+[2023-08-30T16:03:04.106+0200] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/france.cama/code/glovo_de_test/dags/workflows.py                           1           0  0.80s           2023-08-30T14:02:58
+================================================================================
+[2023-08-30T16:03:34.264+0200] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/france.cama/code/glovo_de_test/dags/workflows.py                           1           0  0.95s           2023-08-30T14:03:29
+================================================================================
+[2023-08-30T16:03:47.353+0200] {manager.py:760} INFO - Searching for files in /Users/france.cama/code/glovo_de_test/dags
+[2023-08-30T16:03:47.356+0200] {manager.py:763} INFO - There are 1 files in /Users/france.cama/code/glovo_de_test/dags
+[2023-08-30T16:04:04.487+0200] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/france.cama/code/glovo_de_test/dags/workflows.py                           1           0  0.65s           2023-08-30T14:04:00
+================================================================================
+[2023-08-30T16:04:34.705+0200] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/france.cama/code/glovo_de_test/dags/workflows.py                           1           0  0.64s           2023-08-30T14:04:31
+================================================================================
+[2023-08-30T16:05:05.276+0200] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/france.cama/code/glovo_de_test/dags/workflows.py                           1           0  0.65s           2023-08-30T14:05:02
+================================================================================
+[2023-08-30T16:05:35.442+0200] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/france.cama/code/glovo_de_test/dags/workflows.py                           1           0  0.79s           2023-08-30T14:05:33
+================================================================================

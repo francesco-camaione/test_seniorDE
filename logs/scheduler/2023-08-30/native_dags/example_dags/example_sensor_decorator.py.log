@@ -1,0 +1,7 @@
+[2023-08-30T15:28:08.156+0200] {processor.py:157} INFO - Started process (PID=7054) to work on /Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/example_sensor_decorator.py
+[2023-08-30T15:28:08.157+0200] {processor.py:829} INFO - Processing file /Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/example_sensor_decorator.py for tasks to queue
+[2023-08-30T15:28:08.157+0200] {logging_mixin.py:151} INFO - [2023-08-30T15:28:08.157+0200] {dagbag.py:539} INFO - Filling up the DagBag from /Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/example_sensor_decorator.py
+[2023-08-30T15:28:08.172+0200] {processor.py:839} INFO - DAG(s) dict_keys(['example_sensor_decorator']) retrieved from /Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/example_sensor_decorator.py
+[2023-08-30T15:28:08.262+0200] {logging_mixin.py:151} INFO - [2023-08-30T15:28:08.262+0200] {dag.py:2907} INFO - Sync 1 DAGs
+[2023-08-30T15:28:08.266+0200] {logging_mixin.py:151} INFO - [2023-08-30T15:28:08.266+0200] {dag.py:3677} INFO - Setting next_dagrun for example_sensor_decorator to None, run_after=None
+[2023-08-30T15:28:08.274+0200] {processor.py:179} INFO - Processing /Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/example_dags/example_sensor_decorator.py took 0.119 seconds
