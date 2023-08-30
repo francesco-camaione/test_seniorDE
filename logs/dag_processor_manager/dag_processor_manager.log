@@ -825,3 +825,38 @@ File Path                                                PID    Runtime      # D
 -------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
 /Users/france.cama/code/glovo_de_test/dags/workflows.py                           1           0  0.79s           2023-08-30T14:05:33
 ================================================================================
+[2023-08-30T16:06:05.455+0200] {manager.py:1026} ERROR - Processor for /Users/france.cama/code/glovo_de_test/dags/workflows.py exited with return code 1.
+[2023-08-30T16:06:05.457+0200] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/france.cama/code/glovo_de_test/dags/workflows.py                           0          -1  1.84s           2023-08-30T14:06:05
+================================================================================
+[2023-08-30T16:06:35.631+0200] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                  PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/france.cama/code/glovo_de_test/dags/workflows.py   8350  0.01s             0          -1  1.84s           2023-08-30T14:06:05
+================================================================================
+[2023-08-30T16:06:37.217+0200] {manager.py:1026} ERROR - Processor for /Users/france.cama/code/glovo_de_test/dags/workflows.py exited with return code 1.
+[2023-08-30T16:07:05.933+0200] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/france.cama/code/glovo_de_test/dags/workflows.py                           0          -1  1.59s           2023-08-30T14:06:37
+================================================================================
+[2023-08-30T16:07:08.139+0200] {manager.py:1026} ERROR - Processor for /Users/france.cama/code/glovo_de_test/dags/workflows.py exited with return code 1.
+[2023-08-30T16:07:36.076+0200] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/france.cama/code/glovo_de_test/dags/workflows.py                           0          -1  0.75s           2023-08-30T14:07:08
+================================================================================

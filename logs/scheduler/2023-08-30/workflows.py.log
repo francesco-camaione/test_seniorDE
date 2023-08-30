@@ -870,3 +870,1998 @@ TypeError: argument of type 'datetime.date' is not iterable
 [2023-08-30T16:05:33.387+0200] {logging_mixin.py:151} INFO - [2023-08-30T16:05:33.387+0200] {dag.py:2907} INFO - Sync 1 DAGs
 [2023-08-30T16:05:33.391+0200] {logging_mixin.py:151} INFO - [2023-08-30T16:05:33.391+0200] {dag.py:3677} INFO - Setting next_dagrun for de_test_workflow to None, run_after=None
 [2023-08-30T16:05:33.400+0200] {processor.py:179} INFO - Processing /Users/france.cama/code/glovo_de_test/dags/workflows.py took 0.122 seconds
+[2023-08-30T16:06:04.170+0200] {processor.py:157} INFO - Started process (PID=8347) to work on /Users/france.cama/code/glovo_de_test/dags/workflows.py
+[2023-08-30T16:06:04.172+0200] {processor.py:829} INFO - Processing file /Users/france.cama/code/glovo_de_test/dags/workflows.py for tasks to queue
+[2023-08-30T16:06:04.172+0200] {logging_mixin.py:151} INFO - [2023-08-30T16:06:04.172+0200] {dagbag.py:539} INFO - Filling up the DagBag from /Users/france.cama/code/glovo_de_test/dags/workflows.py
+[2023-08-30T16:06:04.180+0200] {processor.py:839} INFO - DAG(s) dict_keys(['de_test_workflow']) retrieved from /Users/france.cama/code/glovo_de_test/dags/workflows.py
+[2023-08-30T16:06:04.218+0200] {logging_mixin.py:151} INFO - [2023-08-30T16:06:04.210+0200] {dagbag.py:647} ERROR - Failed to write serialized DAG: /Users/france.cama/code/glovo_de_test/dags/workflows.py
+Traceback (most recent call last):
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/mysql/connector/connection_cext.py", line 302, in _open_connection
+    self._cmysql.connect(**cnx_kwargs)
+_mysql_connector.MySQLInterfaceError: Access denied for user 'root'@'localhost' (using password: YES)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 3371, in _wrap_pool_connect
+    return fn()
+           ^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 327, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 894, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 493, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/impl.py", line 145, in _do_get
+    with util.safe_reraise():
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/impl.py", line 143, in _do_get
+    return self._create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 273, in _create_connection
+    return _ConnectionRecord(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 388, in __init__
+    self.__connect()
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 690, in __connect
+    with util.safe_reraise():
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 686, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/create.py", line 574, in connect
+    return dialect.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/default.py", line 598, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/mysql/connector/pooling.py", line 293, in connect
+    return CMySQLConnection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/mysql/connector/connection_cext.py", line 128, in __init__
+    self.connect(**kwargs)
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/mysql/connector/abstracts.py", line 1217, in connect
+    self._open_connection()
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/mysql/connector/connection_cext.py", line 307, in _open_connection
+    raise get_mysql_exception(
+mysql.connector.errors.ProgrammingError: 1045 (28000): Access denied for user 'root'@'localhost' (using password: YES)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/models/dagbag.py", line 636, in _serialize_dag_capturing_errors
+    dag_was_updated = SerializedDagModel.write_dag(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/utils/session.py", line 74, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/models/serialized_dag.py", line 147, in write_dag
+    if session.scalar(
+       ^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 1747, in scalar
+    return self.execute(
+           ^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 1716, in execute
+    conn = self._connection_for_bind(bind)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 1555, in _connection_for_bind
+    return self._transaction._connection_for_bind(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 750, in _connection_for_bind
+    conn = bind.connect()
+           ^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/future/engine.py", line 406, in connect
+    return super(Engine, self).connect()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 3325, in connect
+    return self._connection_cls(self, close_with_result=close_with_result)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 96, in __init__
+    else engine.raw_connection()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 3404, in raw_connection
+    return self._wrap_pool_connect(self.pool.connect, _connection)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 3374, in _wrap_pool_connect
+    Connection._handle_dbapi_exception_noconnection(
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 2208, in _handle_dbapi_exception_noconnection
+    util.raise_(
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 3371, in _wrap_pool_connect
+    return fn()
+           ^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 327, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 894, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 493, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/impl.py", line 145, in _do_get
+    with util.safe_reraise():
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/impl.py", line 143, in _do_get
+    return self._create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 273, in _create_connection
+    return _ConnectionRecord(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 388, in __init__
+    self.__connect()
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 690, in __connect
+    with util.safe_reraise():
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 686, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/create.py", line 574, in connect
+    return dialect.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/default.py", line 598, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/mysql/connector/pooling.py", line 293, in connect
+    return CMySQLConnection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/mysql/connector/connection_cext.py", line 128, in __init__
+    self.connect(**kwargs)
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/mysql/connector/abstracts.py", line 1217, in connect
+    self._open_connection()
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/mysql/connector/connection_cext.py", line 307, in _open_connection
+    raise get_mysql_exception(
+sqlalchemy.exc.ProgrammingError: (mysql.connector.errors.ProgrammingError) 1045 (28000): Access denied for user 'root'@'localhost' (using password: YES)
+(Background on this error at: https://sqlalche.me/e/14/f405)
+[2023-08-30T16:06:04.218+0200] {logging_mixin.py:151} INFO - [2023-08-30T16:06:04.218+0200] {dag.py:2907} INFO - Sync 1 DAGs
+[2023-08-30T16:06:04.710+0200] {logging_mixin.py:151} INFO - [2023-08-30T16:06:04.706+0200] {dagbag.py:647} ERROR - Failed to write serialized DAG: /Users/france.cama/code/glovo_de_test/dags/workflows.py
+Traceback (most recent call last):
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/mysql/connector/connection_cext.py", line 302, in _open_connection
+    self._cmysql.connect(**cnx_kwargs)
+_mysql_connector.MySQLInterfaceError: Access denied for user 'root'@'localhost' (using password: YES)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 3371, in _wrap_pool_connect
+    return fn()
+           ^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 327, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 894, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 493, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/impl.py", line 145, in _do_get
+    with util.safe_reraise():
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/impl.py", line 143, in _do_get
+    return self._create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 273, in _create_connection
+    return _ConnectionRecord(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 388, in __init__
+    self.__connect()
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 690, in __connect
+    with util.safe_reraise():
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 686, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/create.py", line 574, in connect
+    return dialect.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/default.py", line 598, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/mysql/connector/pooling.py", line 293, in connect
+    return CMySQLConnection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/mysql/connector/connection_cext.py", line 128, in __init__
+    self.connect(**kwargs)
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/mysql/connector/abstracts.py", line 1217, in connect
+    self._open_connection()
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/mysql/connector/connection_cext.py", line 307, in _open_connection
+    raise get_mysql_exception(
+mysql.connector.errors.ProgrammingError: 1045 (28000): Access denied for user 'root'@'localhost' (using password: YES)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/models/dagbag.py", line 636, in _serialize_dag_capturing_errors
+    dag_was_updated = SerializedDagModel.write_dag(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/utils/session.py", line 74, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/models/serialized_dag.py", line 147, in write_dag
+    if session.scalar(
+       ^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 1747, in scalar
+    return self.execute(
+           ^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 1716, in execute
+    conn = self._connection_for_bind(bind)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 1555, in _connection_for_bind
+    return self._transaction._connection_for_bind(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 750, in _connection_for_bind
+    conn = bind.connect()
+           ^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/future/engine.py", line 406, in connect
+    return super(Engine, self).connect()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 3325, in connect
+    return self._connection_cls(self, close_with_result=close_with_result)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 96, in __init__
+    else engine.raw_connection()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 3404, in raw_connection
+    return self._wrap_pool_connect(self.pool.connect, _connection)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 3374, in _wrap_pool_connect
+    Connection._handle_dbapi_exception_noconnection(
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 2208, in _handle_dbapi_exception_noconnection
+    util.raise_(
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 3371, in _wrap_pool_connect
+    return fn()
+           ^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 327, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 894, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 493, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/impl.py", line 145, in _do_get
+    with util.safe_reraise():
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/impl.py", line 143, in _do_get
+    return self._create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 273, in _create_connection
+    return _ConnectionRecord(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 388, in __init__
+    self.__connect()
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 690, in __connect
+    with util.safe_reraise():
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 686, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/create.py", line 574, in connect
+    return dialect.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/default.py", line 598, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/mysql/connector/pooling.py", line 293, in connect
+    return CMySQLConnection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/mysql/connector/connection_cext.py", line 128, in __init__
+    self.connect(**kwargs)
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/mysql/connector/abstracts.py", line 1217, in connect
+    self._open_connection()
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/mysql/connector/connection_cext.py", line 307, in _open_connection
+    raise get_mysql_exception(
+sqlalchemy.exc.ProgrammingError: (mysql.connector.errors.ProgrammingError) 1045 (28000): Access denied for user 'root'@'localhost' (using password: YES)
+(Background on this error at: https://sqlalche.me/e/14/f405)
+[2023-08-30T16:06:04.713+0200] {logging_mixin.py:151} INFO - [2023-08-30T16:06:04.713+0200] {dag.py:2907} INFO - Sync 1 DAGs
+[2023-08-30T16:06:05.340+0200] {logging_mixin.py:151} INFO - [2023-08-30T16:06:05.335+0200] {dagbag.py:647} ERROR - Failed to write serialized DAG: /Users/france.cama/code/glovo_de_test/dags/workflows.py
+Traceback (most recent call last):
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/mysql/connector/connection_cext.py", line 302, in _open_connection
+    self._cmysql.connect(**cnx_kwargs)
+_mysql_connector.MySQLInterfaceError: Access denied for user 'root'@'localhost' (using password: YES)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 3371, in _wrap_pool_connect
+    return fn()
+           ^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 327, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 894, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 493, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/impl.py", line 145, in _do_get
+    with util.safe_reraise():
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/impl.py", line 143, in _do_get
+    return self._create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 273, in _create_connection
+    return _ConnectionRecord(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 388, in __init__
+    self.__connect()
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 690, in __connect
+    with util.safe_reraise():
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 686, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/create.py", line 574, in connect
+    return dialect.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/default.py", line 598, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/mysql/connector/pooling.py", line 293, in connect
+    return CMySQLConnection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/mysql/connector/connection_cext.py", line 128, in __init__
+    self.connect(**kwargs)
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/mysql/connector/abstracts.py", line 1217, in connect
+    self._open_connection()
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/mysql/connector/connection_cext.py", line 307, in _open_connection
+    raise get_mysql_exception(
+mysql.connector.errors.ProgrammingError: 1045 (28000): Access denied for user 'root'@'localhost' (using password: YES)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/models/dagbag.py", line 636, in _serialize_dag_capturing_errors
+    dag_was_updated = SerializedDagModel.write_dag(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/utils/session.py", line 74, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/models/serialized_dag.py", line 147, in write_dag
+    if session.scalar(
+       ^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 1747, in scalar
+    return self.execute(
+           ^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 1716, in execute
+    conn = self._connection_for_bind(bind)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 1555, in _connection_for_bind
+    return self._transaction._connection_for_bind(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 750, in _connection_for_bind
+    conn = bind.connect()
+           ^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/future/engine.py", line 406, in connect
+    return super(Engine, self).connect()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 3325, in connect
+    return self._connection_cls(self, close_with_result=close_with_result)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 96, in __init__
+    else engine.raw_connection()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 3404, in raw_connection
+    return self._wrap_pool_connect(self.pool.connect, _connection)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 3374, in _wrap_pool_connect
+    Connection._handle_dbapi_exception_noconnection(
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 2208, in _handle_dbapi_exception_noconnection
+    util.raise_(
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 3371, in _wrap_pool_connect
+    return fn()
+           ^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 327, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 894, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 493, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/impl.py", line 145, in _do_get
+    with util.safe_reraise():
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/impl.py", line 143, in _do_get
+    return self._create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 273, in _create_connection
+    return _ConnectionRecord(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 388, in __init__
+    self.__connect()
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 690, in __connect
+    with util.safe_reraise():
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 686, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/create.py", line 574, in connect
+    return dialect.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/default.py", line 598, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/mysql/connector/pooling.py", line 293, in connect
+    return CMySQLConnection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/mysql/connector/connection_cext.py", line 128, in __init__
+    self.connect(**kwargs)
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/mysql/connector/abstracts.py", line 1217, in connect
+    self._open_connection()
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/mysql/connector/connection_cext.py", line 307, in _open_connection
+    raise get_mysql_exception(
+sqlalchemy.exc.ProgrammingError: (mysql.connector.errors.ProgrammingError) 1045 (28000): Access denied for user 'root'@'localhost' (using password: YES)
+(Background on this error at: https://sqlalche.me/e/14/f405)
+[2023-08-30T16:06:05.343+0200] {logging_mixin.py:151} INFO - [2023-08-30T16:06:05.343+0200] {dag.py:2907} INFO - Sync 1 DAGs
+[2023-08-30T16:06:05.355+0200] {processor.py:182} ERROR - Got an exception! Propagating...
+Traceback (most recent call last):
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/mysql/connector/connection_cext.py", line 302, in _open_connection
+    self._cmysql.connect(**cnx_kwargs)
+_mysql_connector.MySQLInterfaceError: Access denied for user 'root'@'localhost' (using password: YES)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 3371, in _wrap_pool_connect
+    return fn()
+           ^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 327, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 894, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 493, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/impl.py", line 145, in _do_get
+    with util.safe_reraise():
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/impl.py", line 143, in _do_get
+    return self._create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 273, in _create_connection
+    return _ConnectionRecord(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 388, in __init__
+    self.__connect()
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 690, in __connect
+    with util.safe_reraise():
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 686, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/create.py", line 574, in connect
+    return dialect.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/default.py", line 598, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/mysql/connector/pooling.py", line 293, in connect
+    return CMySQLConnection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/mysql/connector/connection_cext.py", line 128, in __init__
+    self.connect(**kwargs)
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/mysql/connector/abstracts.py", line 1217, in connect
+    self._open_connection()
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/mysql/connector/connection_cext.py", line 307, in _open_connection
+    raise get_mysql_exception(
+mysql.connector.errors.ProgrammingError: 1045 (28000): Access denied for user 'root'@'localhost' (using password: YES)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/dag_processing/processor.py", line 178, in _run_file_processor
+    _handle_dag_file_processing()
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/dag_processing/processor.py", line 159, in _handle_dag_file_processing
+    result: tuple[int, int] = dag_file_processor.process_file(
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/utils/session.py", line 77, in wrapper
+    return func(*args, session=session, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/dag_processing/processor.py", line 857, in process_file
+    serialize_errors = DagFileProcessor.save_dag_to_db(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/api_internal/internal_api_call.py", line 112, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/utils/session.py", line 77, in wrapper
+    return func(*args, session=session, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/dag_processing/processor.py", line 893, in save_dag_to_db
+    import_errors = DagBag._sync_to_db(dags=dags, processor_subdir=dag_directory, session=session)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/utils/session.py", line 74, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/models/dagbag.py", line 657, in _sync_to_db
+    for attempt in run_with_db_retries(logger=log):
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/tenacity/__init__.py", line 347, in __iter__
+    do = self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/tenacity/__init__.py", line 325, in iter
+    raise retry_exc.reraise()
+          ^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/tenacity/__init__.py", line 158, in reraise
+    raise self.last_attempt.result()
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/models/dagbag.py", line 671, in _sync_to_db
+    DAG.bulk_write_to_db(dags.values(), processor_subdir=processor_subdir, session=session)
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/utils/session.py", line 74, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/models/dag.py", line 2919, in bulk_write_to_db
+    orm_dags: list[DagModel] = session.scalars(query).unique().all()
+                               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 1778, in scalars
+    return self.execute(
+           ^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 1716, in execute
+    conn = self._connection_for_bind(bind)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 1555, in _connection_for_bind
+    return self._transaction._connection_for_bind(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 750, in _connection_for_bind
+    conn = bind.connect()
+           ^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/future/engine.py", line 406, in connect
+    return super(Engine, self).connect()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 3325, in connect
+    return self._connection_cls(self, close_with_result=close_with_result)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 96, in __init__
+    else engine.raw_connection()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 3404, in raw_connection
+    return self._wrap_pool_connect(self.pool.connect, _connection)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 3374, in _wrap_pool_connect
+    Connection._handle_dbapi_exception_noconnection(
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 2208, in _handle_dbapi_exception_noconnection
+    util.raise_(
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 3371, in _wrap_pool_connect
+    return fn()
+           ^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 327, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 894, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 493, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/impl.py", line 145, in _do_get
+    with util.safe_reraise():
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/impl.py", line 143, in _do_get
+    return self._create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 273, in _create_connection
+    return _ConnectionRecord(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 388, in __init__
+    self.__connect()
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 690, in __connect
+    with util.safe_reraise():
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 686, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/create.py", line 574, in connect
+    return dialect.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/default.py", line 598, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/mysql/connector/pooling.py", line 293, in connect
+    return CMySQLConnection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/mysql/connector/connection_cext.py", line 128, in __init__
+    self.connect(**kwargs)
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/mysql/connector/abstracts.py", line 1217, in connect
+    self._open_connection()
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/mysql/connector/connection_cext.py", line 307, in _open_connection
+    raise get_mysql_exception(
+sqlalchemy.exc.ProgrammingError: (mysql.connector.errors.ProgrammingError) 1045 (28000): Access denied for user 'root'@'localhost' (using password: YES)
+(Background on this error at: https://sqlalche.me/e/14/f405)
+[2023-08-30T16:06:36.066+0200] {processor.py:157} INFO - Started process (PID=8350) to work on /Users/france.cama/code/glovo_de_test/dags/workflows.py
+[2023-08-30T16:06:36.067+0200] {processor.py:829} INFO - Processing file /Users/france.cama/code/glovo_de_test/dags/workflows.py for tasks to queue
+[2023-08-30T16:06:36.068+0200] {logging_mixin.py:151} INFO - [2023-08-30T16:06:36.068+0200] {dagbag.py:539} INFO - Filling up the DagBag from /Users/france.cama/code/glovo_de_test/dags/workflows.py
+[2023-08-30T16:06:36.073+0200] {processor.py:839} INFO - DAG(s) dict_keys(['de_test_workflow']) retrieved from /Users/france.cama/code/glovo_de_test/dags/workflows.py
+[2023-08-30T16:06:36.100+0200] {logging_mixin.py:151} INFO - [2023-08-30T16:06:36.097+0200] {dagbag.py:647} ERROR - Failed to write serialized DAG: /Users/france.cama/code/glovo_de_test/dags/workflows.py
+Traceback (most recent call last):
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/mysql/connector/connection_cext.py", line 302, in _open_connection
+    self._cmysql.connect(**cnx_kwargs)
+_mysql_connector.MySQLInterfaceError: Access denied for user 'root'@'localhost' (using password: YES)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 3371, in _wrap_pool_connect
+    return fn()
+           ^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 327, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 894, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 493, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/impl.py", line 145, in _do_get
+    with util.safe_reraise():
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/impl.py", line 143, in _do_get
+    return self._create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 273, in _create_connection
+    return _ConnectionRecord(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 388, in __init__
+    self.__connect()
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 690, in __connect
+    with util.safe_reraise():
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 686, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/create.py", line 574, in connect
+    return dialect.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/default.py", line 598, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/mysql/connector/pooling.py", line 293, in connect
+    return CMySQLConnection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/mysql/connector/connection_cext.py", line 128, in __init__
+    self.connect(**kwargs)
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/mysql/connector/abstracts.py", line 1217, in connect
+    self._open_connection()
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/mysql/connector/connection_cext.py", line 307, in _open_connection
+    raise get_mysql_exception(
+mysql.connector.errors.ProgrammingError: 1045 (28000): Access denied for user 'root'@'localhost' (using password: YES)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/models/dagbag.py", line 636, in _serialize_dag_capturing_errors
+    dag_was_updated = SerializedDagModel.write_dag(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/utils/session.py", line 74, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/models/serialized_dag.py", line 147, in write_dag
+    if session.scalar(
+       ^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 1747, in scalar
+    return self.execute(
+           ^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 1716, in execute
+    conn = self._connection_for_bind(bind)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 1555, in _connection_for_bind
+    return self._transaction._connection_for_bind(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 750, in _connection_for_bind
+    conn = bind.connect()
+           ^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/future/engine.py", line 406, in connect
+    return super(Engine, self).connect()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 3325, in connect
+    return self._connection_cls(self, close_with_result=close_with_result)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 96, in __init__
+    else engine.raw_connection()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 3404, in raw_connection
+    return self._wrap_pool_connect(self.pool.connect, _connection)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 3374, in _wrap_pool_connect
+    Connection._handle_dbapi_exception_noconnection(
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 2208, in _handle_dbapi_exception_noconnection
+    util.raise_(
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 3371, in _wrap_pool_connect
+    return fn()
+           ^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 327, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 894, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 493, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/impl.py", line 145, in _do_get
+    with util.safe_reraise():
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/impl.py", line 143, in _do_get
+    return self._create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 273, in _create_connection
+    return _ConnectionRecord(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 388, in __init__
+    self.__connect()
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 690, in __connect
+    with util.safe_reraise():
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 686, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/create.py", line 574, in connect
+    return dialect.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/default.py", line 598, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/mysql/connector/pooling.py", line 293, in connect
+    return CMySQLConnection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/mysql/connector/connection_cext.py", line 128, in __init__
+    self.connect(**kwargs)
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/mysql/connector/abstracts.py", line 1217, in connect
+    self._open_connection()
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/mysql/connector/connection_cext.py", line 307, in _open_connection
+    raise get_mysql_exception(
+sqlalchemy.exc.ProgrammingError: (mysql.connector.errors.ProgrammingError) 1045 (28000): Access denied for user 'root'@'localhost' (using password: YES)
+(Background on this error at: https://sqlalche.me/e/14/f405)
+[2023-08-30T16:06:36.100+0200] {logging_mixin.py:151} INFO - [2023-08-30T16:06:36.100+0200] {dag.py:2907} INFO - Sync 1 DAGs
+[2023-08-30T16:06:36.315+0200] {logging_mixin.py:151} INFO - [2023-08-30T16:06:36.312+0200] {dagbag.py:647} ERROR - Failed to write serialized DAG: /Users/france.cama/code/glovo_de_test/dags/workflows.py
+Traceback (most recent call last):
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/mysql/connector/connection_cext.py", line 302, in _open_connection
+    self._cmysql.connect(**cnx_kwargs)
+_mysql_connector.MySQLInterfaceError: Access denied for user 'root'@'localhost' (using password: YES)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 3371, in _wrap_pool_connect
+    return fn()
+           ^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 327, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 894, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 493, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/impl.py", line 145, in _do_get
+    with util.safe_reraise():
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/impl.py", line 143, in _do_get
+    return self._create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 273, in _create_connection
+    return _ConnectionRecord(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 388, in __init__
+    self.__connect()
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 690, in __connect
+    with util.safe_reraise():
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 686, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/create.py", line 574, in connect
+    return dialect.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/default.py", line 598, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/mysql/connector/pooling.py", line 293, in connect
+    return CMySQLConnection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/mysql/connector/connection_cext.py", line 128, in __init__
+    self.connect(**kwargs)
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/mysql/connector/abstracts.py", line 1217, in connect
+    self._open_connection()
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/mysql/connector/connection_cext.py", line 307, in _open_connection
+    raise get_mysql_exception(
+mysql.connector.errors.ProgrammingError: 1045 (28000): Access denied for user 'root'@'localhost' (using password: YES)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/models/dagbag.py", line 636, in _serialize_dag_capturing_errors
+    dag_was_updated = SerializedDagModel.write_dag(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/utils/session.py", line 74, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/models/serialized_dag.py", line 147, in write_dag
+    if session.scalar(
+       ^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 1747, in scalar
+    return self.execute(
+           ^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 1716, in execute
+    conn = self._connection_for_bind(bind)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 1555, in _connection_for_bind
+    return self._transaction._connection_for_bind(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 750, in _connection_for_bind
+    conn = bind.connect()
+           ^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/future/engine.py", line 406, in connect
+    return super(Engine, self).connect()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 3325, in connect
+    return self._connection_cls(self, close_with_result=close_with_result)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 96, in __init__
+    else engine.raw_connection()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 3404, in raw_connection
+    return self._wrap_pool_connect(self.pool.connect, _connection)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 3374, in _wrap_pool_connect
+    Connection._handle_dbapi_exception_noconnection(
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 2208, in _handle_dbapi_exception_noconnection
+    util.raise_(
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 3371, in _wrap_pool_connect
+    return fn()
+           ^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 327, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 894, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 493, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/impl.py", line 145, in _do_get
+    with util.safe_reraise():
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/impl.py", line 143, in _do_get
+    return self._create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 273, in _create_connection
+    return _ConnectionRecord(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 388, in __init__
+    self.__connect()
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 690, in __connect
+    with util.safe_reraise():
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 686, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/create.py", line 574, in connect
+    return dialect.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/default.py", line 598, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/mysql/connector/pooling.py", line 293, in connect
+    return CMySQLConnection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/mysql/connector/connection_cext.py", line 128, in __init__
+    self.connect(**kwargs)
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/mysql/connector/abstracts.py", line 1217, in connect
+    self._open_connection()
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/mysql/connector/connection_cext.py", line 307, in _open_connection
+    raise get_mysql_exception(
+sqlalchemy.exc.ProgrammingError: (mysql.connector.errors.ProgrammingError) 1045 (28000): Access denied for user 'root'@'localhost' (using password: YES)
+(Background on this error at: https://sqlalche.me/e/14/f405)
+[2023-08-30T16:06:36.317+0200] {logging_mixin.py:151} INFO - [2023-08-30T16:06:36.317+0200] {dag.py:2907} INFO - Sync 1 DAGs
+[2023-08-30T16:06:37.102+0200] {logging_mixin.py:151} INFO - [2023-08-30T16:06:37.097+0200] {dagbag.py:647} ERROR - Failed to write serialized DAG: /Users/france.cama/code/glovo_de_test/dags/workflows.py
+Traceback (most recent call last):
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/mysql/connector/connection_cext.py", line 302, in _open_connection
+    self._cmysql.connect(**cnx_kwargs)
+_mysql_connector.MySQLInterfaceError: Access denied for user 'root'@'localhost' (using password: YES)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 3371, in _wrap_pool_connect
+    return fn()
+           ^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 327, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 894, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 493, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/impl.py", line 145, in _do_get
+    with util.safe_reraise():
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/impl.py", line 143, in _do_get
+    return self._create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 273, in _create_connection
+    return _ConnectionRecord(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 388, in __init__
+    self.__connect()
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 690, in __connect
+    with util.safe_reraise():
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 686, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/create.py", line 574, in connect
+    return dialect.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/default.py", line 598, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/mysql/connector/pooling.py", line 293, in connect
+    return CMySQLConnection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/mysql/connector/connection_cext.py", line 128, in __init__
+    self.connect(**kwargs)
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/mysql/connector/abstracts.py", line 1217, in connect
+    self._open_connection()
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/mysql/connector/connection_cext.py", line 307, in _open_connection
+    raise get_mysql_exception(
+mysql.connector.errors.ProgrammingError: 1045 (28000): Access denied for user 'root'@'localhost' (using password: YES)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/models/dagbag.py", line 636, in _serialize_dag_capturing_errors
+    dag_was_updated = SerializedDagModel.write_dag(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/utils/session.py", line 74, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/models/serialized_dag.py", line 147, in write_dag
+    if session.scalar(
+       ^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 1747, in scalar
+    return self.execute(
+           ^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 1716, in execute
+    conn = self._connection_for_bind(bind)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 1555, in _connection_for_bind
+    return self._transaction._connection_for_bind(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 750, in _connection_for_bind
+    conn = bind.connect()
+           ^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/future/engine.py", line 406, in connect
+    return super(Engine, self).connect()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 3325, in connect
+    return self._connection_cls(self, close_with_result=close_with_result)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 96, in __init__
+    else engine.raw_connection()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 3404, in raw_connection
+    return self._wrap_pool_connect(self.pool.connect, _connection)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 3374, in _wrap_pool_connect
+    Connection._handle_dbapi_exception_noconnection(
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 2208, in _handle_dbapi_exception_noconnection
+    util.raise_(
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 3371, in _wrap_pool_connect
+    return fn()
+           ^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 327, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 894, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 493, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/impl.py", line 145, in _do_get
+    with util.safe_reraise():
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/impl.py", line 143, in _do_get
+    return self._create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 273, in _create_connection
+    return _ConnectionRecord(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 388, in __init__
+    self.__connect()
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 690, in __connect
+    with util.safe_reraise():
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 686, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/create.py", line 574, in connect
+    return dialect.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/default.py", line 598, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/mysql/connector/pooling.py", line 293, in connect
+    return CMySQLConnection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/mysql/connector/connection_cext.py", line 128, in __init__
+    self.connect(**kwargs)
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/mysql/connector/abstracts.py", line 1217, in connect
+    self._open_connection()
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/mysql/connector/connection_cext.py", line 307, in _open_connection
+    raise get_mysql_exception(
+sqlalchemy.exc.ProgrammingError: (mysql.connector.errors.ProgrammingError) 1045 (28000): Access denied for user 'root'@'localhost' (using password: YES)
+(Background on this error at: https://sqlalche.me/e/14/f405)
+[2023-08-30T16:06:37.105+0200] {logging_mixin.py:151} INFO - [2023-08-30T16:06:37.105+0200] {dag.py:2907} INFO - Sync 1 DAGs
+[2023-08-30T16:06:37.113+0200] {processor.py:182} ERROR - Got an exception! Propagating...
+Traceback (most recent call last):
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/mysql/connector/connection_cext.py", line 302, in _open_connection
+    self._cmysql.connect(**cnx_kwargs)
+_mysql_connector.MySQLInterfaceError: Access denied for user 'root'@'localhost' (using password: YES)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 3371, in _wrap_pool_connect
+    return fn()
+           ^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 327, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 894, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 493, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/impl.py", line 145, in _do_get
+    with util.safe_reraise():
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/impl.py", line 143, in _do_get
+    return self._create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 273, in _create_connection
+    return _ConnectionRecord(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 388, in __init__
+    self.__connect()
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 690, in __connect
+    with util.safe_reraise():
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 686, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/create.py", line 574, in connect
+    return dialect.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/default.py", line 598, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/mysql/connector/pooling.py", line 293, in connect
+    return CMySQLConnection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/mysql/connector/connection_cext.py", line 128, in __init__
+    self.connect(**kwargs)
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/mysql/connector/abstracts.py", line 1217, in connect
+    self._open_connection()
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/mysql/connector/connection_cext.py", line 307, in _open_connection
+    raise get_mysql_exception(
+mysql.connector.errors.ProgrammingError: 1045 (28000): Access denied for user 'root'@'localhost' (using password: YES)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/dag_processing/processor.py", line 178, in _run_file_processor
+    _handle_dag_file_processing()
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/dag_processing/processor.py", line 159, in _handle_dag_file_processing
+    result: tuple[int, int] = dag_file_processor.process_file(
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/utils/session.py", line 77, in wrapper
+    return func(*args, session=session, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/dag_processing/processor.py", line 857, in process_file
+    serialize_errors = DagFileProcessor.save_dag_to_db(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/api_internal/internal_api_call.py", line 112, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/utils/session.py", line 77, in wrapper
+    return func(*args, session=session, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/dag_processing/processor.py", line 893, in save_dag_to_db
+    import_errors = DagBag._sync_to_db(dags=dags, processor_subdir=dag_directory, session=session)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/utils/session.py", line 74, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/models/dagbag.py", line 657, in _sync_to_db
+    for attempt in run_with_db_retries(logger=log):
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/tenacity/__init__.py", line 347, in __iter__
+    do = self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/tenacity/__init__.py", line 325, in iter
+    raise retry_exc.reraise()
+          ^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/tenacity/__init__.py", line 158, in reraise
+    raise self.last_attempt.result()
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/models/dagbag.py", line 671, in _sync_to_db
+    DAG.bulk_write_to_db(dags.values(), processor_subdir=processor_subdir, session=session)
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/utils/session.py", line 74, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/models/dag.py", line 2919, in bulk_write_to_db
+    orm_dags: list[DagModel] = session.scalars(query).unique().all()
+                               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 1778, in scalars
+    return self.execute(
+           ^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 1716, in execute
+    conn = self._connection_for_bind(bind)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 1555, in _connection_for_bind
+    return self._transaction._connection_for_bind(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 750, in _connection_for_bind
+    conn = bind.connect()
+           ^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/future/engine.py", line 406, in connect
+    return super(Engine, self).connect()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 3325, in connect
+    return self._connection_cls(self, close_with_result=close_with_result)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 96, in __init__
+    else engine.raw_connection()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 3404, in raw_connection
+    return self._wrap_pool_connect(self.pool.connect, _connection)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 3374, in _wrap_pool_connect
+    Connection._handle_dbapi_exception_noconnection(
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 2208, in _handle_dbapi_exception_noconnection
+    util.raise_(
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 3371, in _wrap_pool_connect
+    return fn()
+           ^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 327, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 894, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 493, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/impl.py", line 145, in _do_get
+    with util.safe_reraise():
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/impl.py", line 143, in _do_get
+    return self._create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 273, in _create_connection
+    return _ConnectionRecord(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 388, in __init__
+    self.__connect()
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 690, in __connect
+    with util.safe_reraise():
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 686, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/create.py", line 574, in connect
+    return dialect.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/default.py", line 598, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/mysql/connector/pooling.py", line 293, in connect
+    return CMySQLConnection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/mysql/connector/connection_cext.py", line 128, in __init__
+    self.connect(**kwargs)
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/mysql/connector/abstracts.py", line 1217, in connect
+    self._open_connection()
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/mysql/connector/connection_cext.py", line 307, in _open_connection
+    raise get_mysql_exception(
+sqlalchemy.exc.ProgrammingError: (mysql.connector.errors.ProgrammingError) 1045 (28000): Access denied for user 'root'@'localhost' (using password: YES)
+(Background on this error at: https://sqlalche.me/e/14/f405)
+[2023-08-30T16:07:07.840+0200] {processor.py:157} INFO - Started process (PID=8391) to work on /Users/france.cama/code/glovo_de_test/dags/workflows.py
+[2023-08-30T16:07:07.842+0200] {processor.py:829} INFO - Processing file /Users/france.cama/code/glovo_de_test/dags/workflows.py for tasks to queue
+[2023-08-30T16:07:07.842+0200] {logging_mixin.py:151} INFO - [2023-08-30T16:07:07.842+0200] {dagbag.py:539} INFO - Filling up the DagBag from /Users/france.cama/code/glovo_de_test/dags/workflows.py
+[2023-08-30T16:07:07.848+0200] {processor.py:839} INFO - DAG(s) dict_keys(['de_test_workflow']) retrieved from /Users/france.cama/code/glovo_de_test/dags/workflows.py
+[2023-08-30T16:07:07.874+0200] {logging_mixin.py:151} INFO - [2023-08-30T16:07:07.871+0200] {dagbag.py:647} ERROR - Failed to write serialized DAG: /Users/france.cama/code/glovo_de_test/dags/workflows.py
+Traceback (most recent call last):
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/mysql/connector/connection_cext.py", line 302, in _open_connection
+    self._cmysql.connect(**cnx_kwargs)
+_mysql_connector.MySQLInterfaceError: Access denied for user 'root'@'localhost' (using password: YES)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 3371, in _wrap_pool_connect
+    return fn()
+           ^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 327, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 894, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 493, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/impl.py", line 145, in _do_get
+    with util.safe_reraise():
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/impl.py", line 143, in _do_get
+    return self._create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 273, in _create_connection
+    return _ConnectionRecord(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 388, in __init__
+    self.__connect()
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 690, in __connect
+    with util.safe_reraise():
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 686, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/create.py", line 574, in connect
+    return dialect.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/default.py", line 598, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/mysql/connector/pooling.py", line 293, in connect
+    return CMySQLConnection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/mysql/connector/connection_cext.py", line 128, in __init__
+    self.connect(**kwargs)
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/mysql/connector/abstracts.py", line 1217, in connect
+    self._open_connection()
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/mysql/connector/connection_cext.py", line 307, in _open_connection
+    raise get_mysql_exception(
+mysql.connector.errors.ProgrammingError: 1045 (28000): Access denied for user 'root'@'localhost' (using password: YES)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/models/dagbag.py", line 636, in _serialize_dag_capturing_errors
+    dag_was_updated = SerializedDagModel.write_dag(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/utils/session.py", line 74, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/models/serialized_dag.py", line 147, in write_dag
+    if session.scalar(
+       ^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 1747, in scalar
+    return self.execute(
+           ^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 1716, in execute
+    conn = self._connection_for_bind(bind)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 1555, in _connection_for_bind
+    return self._transaction._connection_for_bind(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 750, in _connection_for_bind
+    conn = bind.connect()
+           ^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/future/engine.py", line 406, in connect
+    return super(Engine, self).connect()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 3325, in connect
+    return self._connection_cls(self, close_with_result=close_with_result)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 96, in __init__
+    else engine.raw_connection()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 3404, in raw_connection
+    return self._wrap_pool_connect(self.pool.connect, _connection)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 3374, in _wrap_pool_connect
+    Connection._handle_dbapi_exception_noconnection(
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 2208, in _handle_dbapi_exception_noconnection
+    util.raise_(
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 3371, in _wrap_pool_connect
+    return fn()
+           ^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 327, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 894, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 493, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/impl.py", line 145, in _do_get
+    with util.safe_reraise():
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/impl.py", line 143, in _do_get
+    return self._create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 273, in _create_connection
+    return _ConnectionRecord(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 388, in __init__
+    self.__connect()
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 690, in __connect
+    with util.safe_reraise():
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 686, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/create.py", line 574, in connect
+    return dialect.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/default.py", line 598, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/mysql/connector/pooling.py", line 293, in connect
+    return CMySQLConnection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/mysql/connector/connection_cext.py", line 128, in __init__
+    self.connect(**kwargs)
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/mysql/connector/abstracts.py", line 1217, in connect
+    self._open_connection()
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/mysql/connector/connection_cext.py", line 307, in _open_connection
+    raise get_mysql_exception(
+sqlalchemy.exc.ProgrammingError: (mysql.connector.errors.ProgrammingError) 1045 (28000): Access denied for user 'root'@'localhost' (using password: YES)
+(Background on this error at: https://sqlalche.me/e/14/f405)
+[2023-08-30T16:07:07.875+0200] {logging_mixin.py:151} INFO - [2023-08-30T16:07:07.875+0200] {dag.py:2907} INFO - Sync 1 DAGs
+[2023-08-30T16:07:07.959+0200] {logging_mixin.py:151} INFO - [2023-08-30T16:07:07.957+0200] {dagbag.py:647} ERROR - Failed to write serialized DAG: /Users/france.cama/code/glovo_de_test/dags/workflows.py
+Traceback (most recent call last):
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/mysql/connector/connection_cext.py", line 302, in _open_connection
+    self._cmysql.connect(**cnx_kwargs)
+_mysql_connector.MySQLInterfaceError: Access denied for user 'root'@'localhost' (using password: YES)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 3371, in _wrap_pool_connect
+    return fn()
+           ^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 327, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 894, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 493, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/impl.py", line 145, in _do_get
+    with util.safe_reraise():
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/impl.py", line 143, in _do_get
+    return self._create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 273, in _create_connection
+    return _ConnectionRecord(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 388, in __init__
+    self.__connect()
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 690, in __connect
+    with util.safe_reraise():
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 686, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/create.py", line 574, in connect
+    return dialect.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/default.py", line 598, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/mysql/connector/pooling.py", line 293, in connect
+    return CMySQLConnection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/mysql/connector/connection_cext.py", line 128, in __init__
+    self.connect(**kwargs)
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/mysql/connector/abstracts.py", line 1217, in connect
+    self._open_connection()
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/mysql/connector/connection_cext.py", line 307, in _open_connection
+    raise get_mysql_exception(
+mysql.connector.errors.ProgrammingError: 1045 (28000): Access denied for user 'root'@'localhost' (using password: YES)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/models/dagbag.py", line 636, in _serialize_dag_capturing_errors
+    dag_was_updated = SerializedDagModel.write_dag(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/utils/session.py", line 74, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/models/serialized_dag.py", line 147, in write_dag
+    if session.scalar(
+       ^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 1747, in scalar
+    return self.execute(
+           ^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 1716, in execute
+    conn = self._connection_for_bind(bind)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 1555, in _connection_for_bind
+    return self._transaction._connection_for_bind(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 750, in _connection_for_bind
+    conn = bind.connect()
+           ^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/future/engine.py", line 406, in connect
+    return super(Engine, self).connect()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 3325, in connect
+    return self._connection_cls(self, close_with_result=close_with_result)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 96, in __init__
+    else engine.raw_connection()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 3404, in raw_connection
+    return self._wrap_pool_connect(self.pool.connect, _connection)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 3374, in _wrap_pool_connect
+    Connection._handle_dbapi_exception_noconnection(
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 2208, in _handle_dbapi_exception_noconnection
+    util.raise_(
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 3371, in _wrap_pool_connect
+    return fn()
+           ^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 327, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 894, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 493, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/impl.py", line 145, in _do_get
+    with util.safe_reraise():
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/impl.py", line 143, in _do_get
+    return self._create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 273, in _create_connection
+    return _ConnectionRecord(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 388, in __init__
+    self.__connect()
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 690, in __connect
+    with util.safe_reraise():
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 686, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/create.py", line 574, in connect
+    return dialect.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/default.py", line 598, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/mysql/connector/pooling.py", line 293, in connect
+    return CMySQLConnection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/mysql/connector/connection_cext.py", line 128, in __init__
+    self.connect(**kwargs)
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/mysql/connector/abstracts.py", line 1217, in connect
+    self._open_connection()
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/mysql/connector/connection_cext.py", line 307, in _open_connection
+    raise get_mysql_exception(
+sqlalchemy.exc.ProgrammingError: (mysql.connector.errors.ProgrammingError) 1045 (28000): Access denied for user 'root'@'localhost' (using password: YES)
+(Background on this error at: https://sqlalche.me/e/14/f405)
+[2023-08-30T16:07:07.960+0200] {logging_mixin.py:151} INFO - [2023-08-30T16:07:07.960+0200] {dag.py:2907} INFO - Sync 1 DAGs
+[2023-08-30T16:07:08.053+0200] {logging_mixin.py:151} INFO - [2023-08-30T16:07:08.051+0200] {dagbag.py:647} ERROR - Failed to write serialized DAG: /Users/france.cama/code/glovo_de_test/dags/workflows.py
+Traceback (most recent call last):
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/mysql/connector/connection_cext.py", line 302, in _open_connection
+    self._cmysql.connect(**cnx_kwargs)
+_mysql_connector.MySQLInterfaceError: Access denied for user 'root'@'localhost' (using password: YES)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 3371, in _wrap_pool_connect
+    return fn()
+           ^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 327, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 894, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 493, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/impl.py", line 145, in _do_get
+    with util.safe_reraise():
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/impl.py", line 143, in _do_get
+    return self._create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 273, in _create_connection
+    return _ConnectionRecord(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 388, in __init__
+    self.__connect()
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 690, in __connect
+    with util.safe_reraise():
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 686, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/create.py", line 574, in connect
+    return dialect.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/default.py", line 598, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/mysql/connector/pooling.py", line 293, in connect
+    return CMySQLConnection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/mysql/connector/connection_cext.py", line 128, in __init__
+    self.connect(**kwargs)
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/mysql/connector/abstracts.py", line 1217, in connect
+    self._open_connection()
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/mysql/connector/connection_cext.py", line 307, in _open_connection
+    raise get_mysql_exception(
+mysql.connector.errors.ProgrammingError: 1045 (28000): Access denied for user 'root'@'localhost' (using password: YES)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/models/dagbag.py", line 636, in _serialize_dag_capturing_errors
+    dag_was_updated = SerializedDagModel.write_dag(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/utils/session.py", line 74, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/models/serialized_dag.py", line 147, in write_dag
+    if session.scalar(
+       ^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 1747, in scalar
+    return self.execute(
+           ^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 1716, in execute
+    conn = self._connection_for_bind(bind)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 1555, in _connection_for_bind
+    return self._transaction._connection_for_bind(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 750, in _connection_for_bind
+    conn = bind.connect()
+           ^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/future/engine.py", line 406, in connect
+    return super(Engine, self).connect()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 3325, in connect
+    return self._connection_cls(self, close_with_result=close_with_result)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 96, in __init__
+    else engine.raw_connection()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 3404, in raw_connection
+    return self._wrap_pool_connect(self.pool.connect, _connection)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 3374, in _wrap_pool_connect
+    Connection._handle_dbapi_exception_noconnection(
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 2208, in _handle_dbapi_exception_noconnection
+    util.raise_(
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 3371, in _wrap_pool_connect
+    return fn()
+           ^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 327, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 894, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 493, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/impl.py", line 145, in _do_get
+    with util.safe_reraise():
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/impl.py", line 143, in _do_get
+    return self._create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 273, in _create_connection
+    return _ConnectionRecord(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 388, in __init__
+    self.__connect()
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 690, in __connect
+    with util.safe_reraise():
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 686, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/create.py", line 574, in connect
+    return dialect.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/default.py", line 598, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/mysql/connector/pooling.py", line 293, in connect
+    return CMySQLConnection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/mysql/connector/connection_cext.py", line 128, in __init__
+    self.connect(**kwargs)
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/mysql/connector/abstracts.py", line 1217, in connect
+    self._open_connection()
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/mysql/connector/connection_cext.py", line 307, in _open_connection
+    raise get_mysql_exception(
+sqlalchemy.exc.ProgrammingError: (mysql.connector.errors.ProgrammingError) 1045 (28000): Access denied for user 'root'@'localhost' (using password: YES)
+(Background on this error at: https://sqlalche.me/e/14/f405)
+[2023-08-30T16:07:08.054+0200] {logging_mixin.py:151} INFO - [2023-08-30T16:07:08.054+0200] {dag.py:2907} INFO - Sync 1 DAGs
+[2023-08-30T16:07:08.062+0200] {processor.py:182} ERROR - Got an exception! Propagating...
+Traceback (most recent call last):
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/mysql/connector/connection_cext.py", line 302, in _open_connection
+    self._cmysql.connect(**cnx_kwargs)
+_mysql_connector.MySQLInterfaceError: Access denied for user 'root'@'localhost' (using password: YES)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 3371, in _wrap_pool_connect
+    return fn()
+           ^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 327, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 894, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 493, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/impl.py", line 145, in _do_get
+    with util.safe_reraise():
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/impl.py", line 143, in _do_get
+    return self._create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 273, in _create_connection
+    return _ConnectionRecord(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 388, in __init__
+    self.__connect()
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 690, in __connect
+    with util.safe_reraise():
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 686, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/create.py", line 574, in connect
+    return dialect.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/default.py", line 598, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/mysql/connector/pooling.py", line 293, in connect
+    return CMySQLConnection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/mysql/connector/connection_cext.py", line 128, in __init__
+    self.connect(**kwargs)
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/mysql/connector/abstracts.py", line 1217, in connect
+    self._open_connection()
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/mysql/connector/connection_cext.py", line 307, in _open_connection
+    raise get_mysql_exception(
+mysql.connector.errors.ProgrammingError: 1045 (28000): Access denied for user 'root'@'localhost' (using password: YES)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/dag_processing/processor.py", line 178, in _run_file_processor
+    _handle_dag_file_processing()
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/dag_processing/processor.py", line 159, in _handle_dag_file_processing
+    result: tuple[int, int] = dag_file_processor.process_file(
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/utils/session.py", line 77, in wrapper
+    return func(*args, session=session, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/dag_processing/processor.py", line 857, in process_file
+    serialize_errors = DagFileProcessor.save_dag_to_db(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/api_internal/internal_api_call.py", line 112, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/utils/session.py", line 77, in wrapper
+    return func(*args, session=session, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/dag_processing/processor.py", line 893, in save_dag_to_db
+    import_errors = DagBag._sync_to_db(dags=dags, processor_subdir=dag_directory, session=session)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/utils/session.py", line 74, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/models/dagbag.py", line 657, in _sync_to_db
+    for attempt in run_with_db_retries(logger=log):
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/tenacity/__init__.py", line 347, in __iter__
+    do = self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/tenacity/__init__.py", line 325, in iter
+    raise retry_exc.reraise()
+          ^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/tenacity/__init__.py", line 158, in reraise
+    raise self.last_attempt.result()
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/models/dagbag.py", line 671, in _sync_to_db
+    DAG.bulk_write_to_db(dags.values(), processor_subdir=processor_subdir, session=session)
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/utils/session.py", line 74, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/airflow/models/dag.py", line 2919, in bulk_write_to_db
+    orm_dags: list[DagModel] = session.scalars(query).unique().all()
+                               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 1778, in scalars
+    return self.execute(
+           ^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 1716, in execute
+    conn = self._connection_for_bind(bind)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 1555, in _connection_for_bind
+    return self._transaction._connection_for_bind(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 750, in _connection_for_bind
+    conn = bind.connect()
+           ^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/future/engine.py", line 406, in connect
+    return super(Engine, self).connect()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 3325, in connect
+    return self._connection_cls(self, close_with_result=close_with_result)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 96, in __init__
+    else engine.raw_connection()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 3404, in raw_connection
+    return self._wrap_pool_connect(self.pool.connect, _connection)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 3374, in _wrap_pool_connect
+    Connection._handle_dbapi_exception_noconnection(
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 2208, in _handle_dbapi_exception_noconnection
+    util.raise_(
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 3371, in _wrap_pool_connect
+    return fn()
+           ^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 327, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 894, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 493, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/impl.py", line 145, in _do_get
+    with util.safe_reraise():
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/impl.py", line 143, in _do_get
+    return self._create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 273, in _create_connection
+    return _ConnectionRecord(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 388, in __init__
+    self.__connect()
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 690, in __connect
+    with util.safe_reraise():
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 686, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/create.py", line 574, in connect
+    return dialect.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/sqlalchemy/engine/default.py", line 598, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/mysql/connector/pooling.py", line 293, in connect
+    return CMySQLConnection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/mysql/connector/connection_cext.py", line 128, in __init__
+    self.connect(**kwargs)
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/mysql/connector/abstracts.py", line 1217, in connect
+    self._open_connection()
+  File "/Users/france.cama/code/glovo_de_test/venv/lib/python3.11/site-packages/mysql/connector/connection_cext.py", line 307, in _open_connection
+    raise get_mysql_exception(
+sqlalchemy.exc.ProgrammingError: (mysql.connector.errors.ProgrammingError) 1045 (28000): Access denied for user 'root'@'localhost' (using password: YES)
+(Background on this error at: https://sqlalche.me/e/14/f405)

@@ -88,13 +88,11 @@ output_df = d_1 \
 output_df.show(10)
 # output_df.explain()
 
-
 # output_path = "../test_dataset/output_dataset"
 # output_df.write.option("header", "true").csv(output_path, mode="overwrite")
 
 # HOW TO PRODUCE FINAL SINGLE FORMATTED CSV DATASET
 # final single formatted csv can be produced using the following linux commands in the shell:
 # 1. move to the output_dataset folder
-# 2. create a file using: cat > single_output_dataset.csv. Then exit using Contrl + C.
-# 3. use the cat command to copy the content of partitions files into the target file:
+# 2. use the cat command to copy the content of partitions files into the target file:
 # cat ./*.csv >> single_output_dataset.csv
