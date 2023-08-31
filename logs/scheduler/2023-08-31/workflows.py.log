@@ -1,0 +1,193 @@
+[2023-08-31T15:18:31.245+0200] {processor.py:157} INFO - Started process (PID=2845) to work on /Users/france.cama/code/glovo_de_test/dags/workflows.py
+[2023-08-31T15:18:31.246+0200] {processor.py:829} INFO - Processing file /Users/france.cama/code/glovo_de_test/dags/workflows.py for tasks to queue
+[2023-08-31T15:18:31.247+0200] {logging_mixin.py:151} INFO - [2023-08-31T15:18:31.247+0200] {dagbag.py:539} INFO - Filling up the DagBag from /Users/france.cama/code/glovo_de_test/dags/workflows.py
+[2023-08-31T15:18:31.254+0200] {processor.py:839} INFO - DAG(s) dict_keys(['de_test_workflow']) retrieved from /Users/france.cama/code/glovo_de_test/dags/workflows.py
+[2023-08-31T15:18:31.342+0200] {logging_mixin.py:151} INFO - [2023-08-31T15:18:31.342+0200] {dag.py:2907} INFO - Sync 1 DAGs
+[2023-08-31T15:18:31.347+0200] {logging_mixin.py:151} INFO - [2023-08-31T15:18:31.347+0200] {dag.py:3677} INFO - Setting next_dagrun for de_test_workflow to None, run_after=None
+[2023-08-31T15:18:31.358+0200] {processor.py:179} INFO - Processing /Users/france.cama/code/glovo_de_test/dags/workflows.py took 0.113 seconds
+[2023-08-31T15:19:02.220+0200] {processor.py:157} INFO - Started process (PID=2855) to work on /Users/france.cama/code/glovo_de_test/dags/workflows.py
+[2023-08-31T15:19:02.221+0200] {processor.py:829} INFO - Processing file /Users/france.cama/code/glovo_de_test/dags/workflows.py for tasks to queue
+[2023-08-31T15:19:02.222+0200] {logging_mixin.py:151} INFO - [2023-08-31T15:19:02.221+0200] {dagbag.py:539} INFO - Filling up the DagBag from /Users/france.cama/code/glovo_de_test/dags/workflows.py
+[2023-08-31T15:19:02.230+0200] {processor.py:839} INFO - DAG(s) dict_keys(['de_test_workflow']) retrieved from /Users/france.cama/code/glovo_de_test/dags/workflows.py
+[2023-08-31T15:19:02.330+0200] {logging_mixin.py:151} INFO - [2023-08-31T15:19:02.330+0200] {dag.py:2907} INFO - Sync 1 DAGs
+[2023-08-31T15:19:02.334+0200] {logging_mixin.py:151} INFO - [2023-08-31T15:19:02.334+0200] {dag.py:3677} INFO - Setting next_dagrun for de_test_workflow to None, run_after=None
+[2023-08-31T15:19:02.343+0200] {processor.py:179} INFO - Processing /Users/france.cama/code/glovo_de_test/dags/workflows.py took 0.124 seconds
+[2023-08-31T15:19:33.206+0200] {processor.py:157} INFO - Started process (PID=2865) to work on /Users/france.cama/code/glovo_de_test/dags/workflows.py
+[2023-08-31T15:19:33.208+0200] {processor.py:829} INFO - Processing file /Users/france.cama/code/glovo_de_test/dags/workflows.py for tasks to queue
+[2023-08-31T15:19:33.208+0200] {logging_mixin.py:151} INFO - [2023-08-31T15:19:33.208+0200] {dagbag.py:539} INFO - Filling up the DagBag from /Users/france.cama/code/glovo_de_test/dags/workflows.py
+[2023-08-31T15:19:33.221+0200] {processor.py:839} INFO - DAG(s) dict_keys(['de_test_workflow']) retrieved from /Users/france.cama/code/glovo_de_test/dags/workflows.py
+[2023-08-31T15:19:33.321+0200] {logging_mixin.py:151} INFO - [2023-08-31T15:19:33.321+0200] {dag.py:2907} INFO - Sync 1 DAGs
+[2023-08-31T15:19:33.325+0200] {logging_mixin.py:151} INFO - [2023-08-31T15:19:33.325+0200] {dag.py:3677} INFO - Setting next_dagrun for de_test_workflow to None, run_after=None
+[2023-08-31T15:19:33.334+0200] {processor.py:179} INFO - Processing /Users/france.cama/code/glovo_de_test/dags/workflows.py took 0.128 seconds
+[2023-08-31T15:20:04.236+0200] {processor.py:157} INFO - Started process (PID=2872) to work on /Users/france.cama/code/glovo_de_test/dags/workflows.py
+[2023-08-31T15:20:04.237+0200] {processor.py:829} INFO - Processing file /Users/france.cama/code/glovo_de_test/dags/workflows.py for tasks to queue
+[2023-08-31T15:20:04.237+0200] {logging_mixin.py:151} INFO - [2023-08-31T15:20:04.237+0200] {dagbag.py:539} INFO - Filling up the DagBag from /Users/france.cama/code/glovo_de_test/dags/workflows.py
+[2023-08-31T15:20:04.247+0200] {processor.py:839} INFO - DAG(s) dict_keys(['de_test_workflow']) retrieved from /Users/france.cama/code/glovo_de_test/dags/workflows.py
+[2023-08-31T15:20:04.350+0200] {logging_mixin.py:151} INFO - [2023-08-31T15:20:04.350+0200] {dag.py:2907} INFO - Sync 1 DAGs
+[2023-08-31T15:20:04.354+0200] {logging_mixin.py:151} INFO - [2023-08-31T15:20:04.354+0200] {dag.py:3677} INFO - Setting next_dagrun for de_test_workflow to None, run_after=None
+[2023-08-31T15:20:04.363+0200] {processor.py:179} INFO - Processing /Users/france.cama/code/glovo_de_test/dags/workflows.py took 0.128 seconds
+[2023-08-31T15:20:35.150+0200] {processor.py:157} INFO - Started process (PID=2897) to work on /Users/france.cama/code/glovo_de_test/dags/workflows.py
+[2023-08-31T15:20:35.152+0200] {processor.py:829} INFO - Processing file /Users/france.cama/code/glovo_de_test/dags/workflows.py for tasks to queue
+[2023-08-31T15:20:35.152+0200] {logging_mixin.py:151} INFO - [2023-08-31T15:20:35.152+0200] {dagbag.py:539} INFO - Filling up the DagBag from /Users/france.cama/code/glovo_de_test/dags/workflows.py
+[2023-08-31T15:20:35.162+0200] {processor.py:839} INFO - DAG(s) dict_keys(['de_test_workflow']) retrieved from /Users/france.cama/code/glovo_de_test/dags/workflows.py
+[2023-08-31T15:20:35.262+0200] {logging_mixin.py:151} INFO - [2023-08-31T15:20:35.261+0200] {dag.py:2907} INFO - Sync 1 DAGs
+[2023-08-31T15:20:35.266+0200] {logging_mixin.py:151} INFO - [2023-08-31T15:20:35.265+0200] {dag.py:3677} INFO - Setting next_dagrun for de_test_workflow to None, run_after=None
+[2023-08-31T15:20:35.275+0200] {processor.py:179} INFO - Processing /Users/france.cama/code/glovo_de_test/dags/workflows.py took 0.125 seconds
+[2023-08-31T15:21:06.053+0200] {processor.py:157} INFO - Started process (PID=2908) to work on /Users/france.cama/code/glovo_de_test/dags/workflows.py
+[2023-08-31T15:21:06.055+0200] {processor.py:829} INFO - Processing file /Users/france.cama/code/glovo_de_test/dags/workflows.py for tasks to queue
+[2023-08-31T15:21:06.055+0200] {logging_mixin.py:151} INFO - [2023-08-31T15:21:06.055+0200] {dagbag.py:539} INFO - Filling up the DagBag from /Users/france.cama/code/glovo_de_test/dags/workflows.py
+[2023-08-31T15:21:06.063+0200] {processor.py:839} INFO - DAG(s) dict_keys(['de_test_workflow']) retrieved from /Users/france.cama/code/glovo_de_test/dags/workflows.py
+[2023-08-31T15:21:06.151+0200] {logging_mixin.py:151} INFO - [2023-08-31T15:21:06.151+0200] {dag.py:2907} INFO - Sync 1 DAGs
+[2023-08-31T15:21:06.155+0200] {logging_mixin.py:151} INFO - [2023-08-31T15:21:06.155+0200] {dag.py:3677} INFO - Setting next_dagrun for de_test_workflow to None, run_after=None
+[2023-08-31T15:21:06.165+0200] {processor.py:179} INFO - Processing /Users/france.cama/code/glovo_de_test/dags/workflows.py took 0.112 seconds
+[2023-08-31T15:21:36.852+0200] {processor.py:157} INFO - Started process (PID=2915) to work on /Users/france.cama/code/glovo_de_test/dags/workflows.py
+[2023-08-31T15:21:36.854+0200] {processor.py:829} INFO - Processing file /Users/france.cama/code/glovo_de_test/dags/workflows.py for tasks to queue
+[2023-08-31T15:21:36.854+0200] {logging_mixin.py:151} INFO - [2023-08-31T15:21:36.854+0200] {dagbag.py:539} INFO - Filling up the DagBag from /Users/france.cama/code/glovo_de_test/dags/workflows.py
+[2023-08-31T15:21:36.861+0200] {processor.py:839} INFO - DAG(s) dict_keys(['de_test_workflow']) retrieved from /Users/france.cama/code/glovo_de_test/dags/workflows.py
+[2023-08-31T15:21:36.956+0200] {logging_mixin.py:151} INFO - [2023-08-31T15:21:36.955+0200] {dag.py:2907} INFO - Sync 1 DAGs
+[2023-08-31T15:21:36.959+0200] {logging_mixin.py:151} INFO - [2023-08-31T15:21:36.959+0200] {dag.py:3677} INFO - Setting next_dagrun for de_test_workflow to None, run_after=None
+[2023-08-31T15:21:36.970+0200] {processor.py:179} INFO - Processing /Users/france.cama/code/glovo_de_test/dags/workflows.py took 0.118 seconds
+[2023-08-31T15:22:07.755+0200] {processor.py:157} INFO - Started process (PID=2931) to work on /Users/france.cama/code/glovo_de_test/dags/workflows.py
+[2023-08-31T15:22:07.758+0200] {processor.py:829} INFO - Processing file /Users/france.cama/code/glovo_de_test/dags/workflows.py for tasks to queue
+[2023-08-31T15:22:07.759+0200] {logging_mixin.py:151} INFO - [2023-08-31T15:22:07.759+0200] {dagbag.py:539} INFO - Filling up the DagBag from /Users/france.cama/code/glovo_de_test/dags/workflows.py
+[2023-08-31T15:22:07.769+0200] {processor.py:839} INFO - DAG(s) dict_keys(['de_test_workflow']) retrieved from /Users/france.cama/code/glovo_de_test/dags/workflows.py
+[2023-08-31T15:22:07.869+0200] {logging_mixin.py:151} INFO - [2023-08-31T15:22:07.868+0200] {dag.py:2907} INFO - Sync 1 DAGs
+[2023-08-31T15:22:07.873+0200] {logging_mixin.py:151} INFO - [2023-08-31T15:22:07.873+0200] {dag.py:3677} INFO - Setting next_dagrun for de_test_workflow to None, run_after=None
+[2023-08-31T15:22:07.882+0200] {processor.py:179} INFO - Processing /Users/france.cama/code/glovo_de_test/dags/workflows.py took 0.127 seconds
+[2023-08-31T15:22:38.856+0200] {processor.py:157} INFO - Started process (PID=2933) to work on /Users/france.cama/code/glovo_de_test/dags/workflows.py
+[2023-08-31T15:22:38.857+0200] {processor.py:829} INFO - Processing file /Users/france.cama/code/glovo_de_test/dags/workflows.py for tasks to queue
+[2023-08-31T15:22:38.857+0200] {logging_mixin.py:151} INFO - [2023-08-31T15:22:38.857+0200] {dagbag.py:539} INFO - Filling up the DagBag from /Users/france.cama/code/glovo_de_test/dags/workflows.py
+[2023-08-31T15:22:38.867+0200] {processor.py:839} INFO - DAG(s) dict_keys(['de_test_workflow']) retrieved from /Users/france.cama/code/glovo_de_test/dags/workflows.py
+[2023-08-31T15:22:38.967+0200] {logging_mixin.py:151} INFO - [2023-08-31T15:22:38.967+0200] {dag.py:2907} INFO - Sync 1 DAGs
+[2023-08-31T15:22:38.971+0200] {logging_mixin.py:151} INFO - [2023-08-31T15:22:38.971+0200] {dag.py:3677} INFO - Setting next_dagrun for de_test_workflow to None, run_after=None
+[2023-08-31T15:22:38.981+0200] {processor.py:179} INFO - Processing /Users/france.cama/code/glovo_de_test/dags/workflows.py took 0.125 seconds
+[2023-08-31T15:23:09.916+0200] {processor.py:157} INFO - Started process (PID=2937) to work on /Users/france.cama/code/glovo_de_test/dags/workflows.py
+[2023-08-31T15:23:09.917+0200] {processor.py:829} INFO - Processing file /Users/france.cama/code/glovo_de_test/dags/workflows.py for tasks to queue
+[2023-08-31T15:23:09.917+0200] {logging_mixin.py:151} INFO - [2023-08-31T15:23:09.917+0200] {dagbag.py:539} INFO - Filling up the DagBag from /Users/france.cama/code/glovo_de_test/dags/workflows.py
+[2023-08-31T15:23:09.927+0200] {processor.py:839} INFO - DAG(s) dict_keys(['de_test_workflow']) retrieved from /Users/france.cama/code/glovo_de_test/dags/workflows.py
+[2023-08-31T15:23:10.028+0200] {logging_mixin.py:151} INFO - [2023-08-31T15:23:10.028+0200] {dag.py:2907} INFO - Sync 1 DAGs
+[2023-08-31T15:23:10.032+0200] {logging_mixin.py:151} INFO - [2023-08-31T15:23:10.032+0200] {dag.py:3677} INFO - Setting next_dagrun for de_test_workflow to None, run_after=None
+[2023-08-31T15:23:10.042+0200] {processor.py:179} INFO - Processing /Users/france.cama/code/glovo_de_test/dags/workflows.py took 0.127 seconds
+[2023-08-31T15:23:41.708+0200] {processor.py:157} INFO - Started process (PID=2940) to work on /Users/france.cama/code/glovo_de_test/dags/workflows.py
+[2023-08-31T15:23:41.710+0200] {processor.py:829} INFO - Processing file /Users/france.cama/code/glovo_de_test/dags/workflows.py for tasks to queue
+[2023-08-31T15:23:41.710+0200] {logging_mixin.py:151} INFO - [2023-08-31T15:23:41.710+0200] {dagbag.py:539} INFO - Filling up the DagBag from /Users/france.cama/code/glovo_de_test/dags/workflows.py
+[2023-08-31T15:23:41.722+0200] {processor.py:839} INFO - DAG(s) dict_keys(['de_test_workflow']) retrieved from /Users/france.cama/code/glovo_de_test/dags/workflows.py
+[2023-08-31T15:49:48.051+0200] {processor.py:157} INFO - Started process (PID=3194) to work on /Users/france.cama/code/glovo_de_test/dags/workflows.py
+[2023-08-31T15:49:48.052+0200] {processor.py:829} INFO - Processing file /Users/france.cama/code/glovo_de_test/dags/workflows.py for tasks to queue
+[2023-08-31T15:49:48.052+0200] {logging_mixin.py:151} INFO - [2023-08-31T15:49:48.052+0200] {dagbag.py:539} INFO - Filling up the DagBag from /Users/france.cama/code/glovo_de_test/dags/workflows.py
+[2023-08-31T15:49:48.060+0200] {processor.py:839} INFO - DAG(s) dict_keys(['de_test_workflow']) retrieved from /Users/france.cama/code/glovo_de_test/dags/workflows.py
+[2023-08-31T15:49:48.294+0200] {logging_mixin.py:151} INFO - [2023-08-31T15:49:48.294+0200] {dag.py:2907} INFO - Sync 1 DAGs
+[2023-08-31T15:49:48.298+0200] {logging_mixin.py:151} INFO - [2023-08-31T15:49:48.298+0200] {dag.py:3677} INFO - Setting next_dagrun for de_test_workflow to None, run_after=None
+[2023-08-31T15:49:48.311+0200] {processor.py:179} INFO - Processing /Users/france.cama/code/glovo_de_test/dags/workflows.py took 0.261 seconds
+[2023-08-31T15:50:19.265+0200] {processor.py:157} INFO - Started process (PID=3204) to work on /Users/france.cama/code/glovo_de_test/dags/workflows.py
+[2023-08-31T15:50:19.267+0200] {processor.py:829} INFO - Processing file /Users/france.cama/code/glovo_de_test/dags/workflows.py for tasks to queue
+[2023-08-31T15:50:19.267+0200] {logging_mixin.py:151} INFO - [2023-08-31T15:50:19.267+0200] {dagbag.py:539} INFO - Filling up the DagBag from /Users/france.cama/code/glovo_de_test/dags/workflows.py
+[2023-08-31T15:50:19.275+0200] {processor.py:839} INFO - DAG(s) dict_keys(['de_test_workflow']) retrieved from /Users/france.cama/code/glovo_de_test/dags/workflows.py
+[2023-08-31T15:50:19.374+0200] {logging_mixin.py:151} INFO - [2023-08-31T15:50:19.374+0200] {dag.py:2907} INFO - Sync 1 DAGs
+[2023-08-31T15:50:19.378+0200] {logging_mixin.py:151} INFO - [2023-08-31T15:50:19.378+0200] {dag.py:3677} INFO - Setting next_dagrun for de_test_workflow to None, run_after=None
+[2023-08-31T15:50:19.387+0200] {processor.py:179} INFO - Processing /Users/france.cama/code/glovo_de_test/dags/workflows.py took 0.122 seconds
+[2023-08-31T15:50:50.201+0200] {processor.py:157} INFO - Started process (PID=3217) to work on /Users/france.cama/code/glovo_de_test/dags/workflows.py
+[2023-08-31T15:50:50.202+0200] {processor.py:829} INFO - Processing file /Users/france.cama/code/glovo_de_test/dags/workflows.py for tasks to queue
+[2023-08-31T15:50:50.202+0200] {logging_mixin.py:151} INFO - [2023-08-31T15:50:50.202+0200] {dagbag.py:539} INFO - Filling up the DagBag from /Users/france.cama/code/glovo_de_test/dags/workflows.py
+[2023-08-31T15:50:50.211+0200] {processor.py:839} INFO - DAG(s) dict_keys(['de_test_workflow']) retrieved from /Users/france.cama/code/glovo_de_test/dags/workflows.py
+[2023-08-31T15:50:50.310+0200] {logging_mixin.py:151} INFO - [2023-08-31T15:50:50.309+0200] {dag.py:2907} INFO - Sync 1 DAGs
+[2023-08-31T15:50:50.314+0200] {logging_mixin.py:151} INFO - [2023-08-31T15:50:50.313+0200] {dag.py:3677} INFO - Setting next_dagrun for de_test_workflow to None, run_after=None
+[2023-08-31T15:50:50.322+0200] {processor.py:179} INFO - Processing /Users/france.cama/code/glovo_de_test/dags/workflows.py took 0.122 seconds
+[2023-08-31T15:51:10.530+0200] {processor.py:157} INFO - Started process (PID=3234) to work on /Users/france.cama/code/glovo_de_test/dags/workflows.py
+[2023-08-31T15:51:10.533+0200] {processor.py:829} INFO - Processing file /Users/france.cama/code/glovo_de_test/dags/workflows.py for tasks to queue
+[2023-08-31T15:51:10.533+0200] {logging_mixin.py:151} INFO - [2023-08-31T15:51:10.533+0200] {dagbag.py:539} INFO - Filling up the DagBag from /Users/france.cama/code/glovo_de_test/dags/workflows.py
+[2023-08-31T15:51:10.540+0200] {processor.py:839} INFO - DAG(s) dict_keys(['de_test_workflow']) retrieved from /Users/france.cama/code/glovo_de_test/dags/workflows.py
+[2023-08-31T15:51:10.630+0200] {logging_mixin.py:151} INFO - [2023-08-31T15:51:10.630+0200] {dag.py:2907} INFO - Sync 1 DAGs
+[2023-08-31T15:51:10.634+0200] {logging_mixin.py:151} INFO - [2023-08-31T15:51:10.634+0200] {dag.py:3677} INFO - Setting next_dagrun for de_test_workflow to None, run_after=None
+[2023-08-31T15:51:10.643+0200] {processor.py:179} INFO - Processing /Users/france.cama/code/glovo_de_test/dags/workflows.py took 0.113 seconds
+[2023-08-31T15:51:41.515+0200] {processor.py:157} INFO - Started process (PID=3257) to work on /Users/france.cama/code/glovo_de_test/dags/workflows.py
+[2023-08-31T15:51:41.517+0200] {processor.py:829} INFO - Processing file /Users/france.cama/code/glovo_de_test/dags/workflows.py for tasks to queue
+[2023-08-31T15:51:41.517+0200] {logging_mixin.py:151} INFO - [2023-08-31T15:51:41.517+0200] {dagbag.py:539} INFO - Filling up the DagBag from /Users/france.cama/code/glovo_de_test/dags/workflows.py
+[2023-08-31T15:51:41.529+0200] {processor.py:839} INFO - DAG(s) dict_keys(['de_test_workflow']) retrieved from /Users/france.cama/code/glovo_de_test/dags/workflows.py
+[2023-08-31T15:51:41.627+0200] {logging_mixin.py:151} INFO - [2023-08-31T15:51:41.627+0200] {dag.py:2907} INFO - Sync 1 DAGs
+[2023-08-31T15:51:41.631+0200] {logging_mixin.py:151} INFO - [2023-08-31T15:51:41.631+0200] {dag.py:3677} INFO - Setting next_dagrun for de_test_workflow to None, run_after=None
+[2023-08-31T15:51:41.640+0200] {processor.py:179} INFO - Processing /Users/france.cama/code/glovo_de_test/dags/workflows.py took 0.125 seconds
+[2023-08-31T15:51:49.565+0200] {processor.py:157} INFO - Started process (PID=3306) to work on /Users/france.cama/code/glovo_de_test/dags/workflows.py
+[2023-08-31T15:51:49.567+0200] {processor.py:829} INFO - Processing file /Users/france.cama/code/glovo_de_test/dags/workflows.py for tasks to queue
+[2023-08-31T15:51:49.567+0200] {logging_mixin.py:151} INFO - [2023-08-31T15:51:49.567+0200] {dagbag.py:539} INFO - Filling up the DagBag from /Users/france.cama/code/glovo_de_test/dags/workflows.py
+[2023-08-31T15:51:49.575+0200] {processor.py:839} INFO - DAG(s) dict_keys(['de_test_workflow']) retrieved from /Users/france.cama/code/glovo_de_test/dags/workflows.py
+[2023-08-31T15:51:49.664+0200] {logging_mixin.py:151} INFO - [2023-08-31T15:51:49.664+0200] {dag.py:2907} INFO - Sync 1 DAGs
+[2023-08-31T15:51:49.668+0200] {logging_mixin.py:151} INFO - [2023-08-31T15:51:49.668+0200] {dag.py:3677} INFO - Setting next_dagrun for de_test_workflow to None, run_after=None
+[2023-08-31T15:51:49.677+0200] {processor.py:179} INFO - Processing /Users/france.cama/code/glovo_de_test/dags/workflows.py took 0.112 seconds
+[2023-08-31T15:52:20.512+0200] {processor.py:157} INFO - Started process (PID=3360) to work on /Users/france.cama/code/glovo_de_test/dags/workflows.py
+[2023-08-31T15:52:20.513+0200] {processor.py:829} INFO - Processing file /Users/france.cama/code/glovo_de_test/dags/workflows.py for tasks to queue
+[2023-08-31T15:52:20.513+0200] {logging_mixin.py:151} INFO - [2023-08-31T15:52:20.513+0200] {dagbag.py:539} INFO - Filling up the DagBag from /Users/france.cama/code/glovo_de_test/dags/workflows.py
+[2023-08-31T15:52:20.519+0200] {processor.py:839} INFO - DAG(s) dict_keys(['de_test_workflow']) retrieved from /Users/france.cama/code/glovo_de_test/dags/workflows.py
+[2023-08-31T15:52:20.614+0200] {logging_mixin.py:151} INFO - [2023-08-31T15:52:20.613+0200] {dag.py:2907} INFO - Sync 1 DAGs
+[2023-08-31T15:52:20.617+0200] {logging_mixin.py:151} INFO - [2023-08-31T15:52:20.617+0200] {dag.py:3677} INFO - Setting next_dagrun for de_test_workflow to None, run_after=None
+[2023-08-31T15:52:20.627+0200] {processor.py:179} INFO - Processing /Users/france.cama/code/glovo_de_test/dags/workflows.py took 0.116 seconds
+[2023-08-31T15:52:51.481+0200] {processor.py:157} INFO - Started process (PID=3382) to work on /Users/france.cama/code/glovo_de_test/dags/workflows.py
+[2023-08-31T15:52:51.483+0200] {processor.py:829} INFO - Processing file /Users/france.cama/code/glovo_de_test/dags/workflows.py for tasks to queue
+[2023-08-31T15:52:51.483+0200] {logging_mixin.py:151} INFO - [2023-08-31T15:52:51.483+0200] {dagbag.py:539} INFO - Filling up the DagBag from /Users/france.cama/code/glovo_de_test/dags/workflows.py
+[2023-08-31T15:52:51.493+0200] {processor.py:839} INFO - DAG(s) dict_keys(['de_test_workflow']) retrieved from /Users/france.cama/code/glovo_de_test/dags/workflows.py
+[2023-08-31T15:52:51.594+0200] {logging_mixin.py:151} INFO - [2023-08-31T15:52:51.594+0200] {dag.py:2907} INFO - Sync 1 DAGs
+[2023-08-31T15:52:51.598+0200] {logging_mixin.py:151} INFO - [2023-08-31T15:52:51.598+0200] {dag.py:3677} INFO - Setting next_dagrun for de_test_workflow to None, run_after=None
+[2023-08-31T15:52:51.607+0200] {processor.py:179} INFO - Processing /Users/france.cama/code/glovo_de_test/dags/workflows.py took 0.126 seconds
+[2023-08-31T15:53:22.336+0200] {processor.py:157} INFO - Started process (PID=3398) to work on /Users/france.cama/code/glovo_de_test/dags/workflows.py
+[2023-08-31T15:53:22.338+0200] {processor.py:829} INFO - Processing file /Users/france.cama/code/glovo_de_test/dags/workflows.py for tasks to queue
+[2023-08-31T15:53:22.338+0200] {logging_mixin.py:151} INFO - [2023-08-31T15:53:22.338+0200] {dagbag.py:539} INFO - Filling up the DagBag from /Users/france.cama/code/glovo_de_test/dags/workflows.py
+[2023-08-31T15:53:22.347+0200] {processor.py:839} INFO - DAG(s) dict_keys(['de_test_workflow']) retrieved from /Users/france.cama/code/glovo_de_test/dags/workflows.py
+[2023-08-31T15:53:22.445+0200] {logging_mixin.py:151} INFO - [2023-08-31T15:53:22.445+0200] {dag.py:2907} INFO - Sync 1 DAGs
+[2023-08-31T15:53:22.449+0200] {logging_mixin.py:151} INFO - [2023-08-31T15:53:22.449+0200] {dag.py:3677} INFO - Setting next_dagrun for de_test_workflow to None, run_after=None
+[2023-08-31T15:53:22.458+0200] {processor.py:179} INFO - Processing /Users/france.cama/code/glovo_de_test/dags/workflows.py took 0.122 seconds
+[2023-08-31T15:53:53.247+0200] {processor.py:157} INFO - Started process (PID=3436) to work on /Users/france.cama/code/glovo_de_test/dags/workflows.py
+[2023-08-31T15:53:53.248+0200] {processor.py:829} INFO - Processing file /Users/france.cama/code/glovo_de_test/dags/workflows.py for tasks to queue
+[2023-08-31T15:53:53.248+0200] {logging_mixin.py:151} INFO - [2023-08-31T15:53:53.248+0200] {dagbag.py:539} INFO - Filling up the DagBag from /Users/france.cama/code/glovo_de_test/dags/workflows.py
+[2023-08-31T15:53:53.254+0200] {processor.py:839} INFO - DAG(s) dict_keys(['de_test_workflow']) retrieved from /Users/france.cama/code/glovo_de_test/dags/workflows.py
+[2023-08-31T15:53:53.348+0200] {logging_mixin.py:151} INFO - [2023-08-31T15:53:53.348+0200] {dag.py:2907} INFO - Sync 1 DAGs
+[2023-08-31T15:53:53.352+0200] {logging_mixin.py:151} INFO - [2023-08-31T15:53:53.352+0200] {dag.py:3677} INFO - Setting next_dagrun for de_test_workflow to None, run_after=None
+[2023-08-31T15:53:53.361+0200] {processor.py:179} INFO - Processing /Users/france.cama/code/glovo_de_test/dags/workflows.py took 0.115 seconds
+[2023-08-31T15:54:24.036+0200] {processor.py:157} INFO - Started process (PID=3452) to work on /Users/france.cama/code/glovo_de_test/dags/workflows.py
+[2023-08-31T15:54:24.038+0200] {processor.py:829} INFO - Processing file /Users/france.cama/code/glovo_de_test/dags/workflows.py for tasks to queue
+[2023-08-31T15:54:24.038+0200] {logging_mixin.py:151} INFO - [2023-08-31T15:54:24.038+0200] {dagbag.py:539} INFO - Filling up the DagBag from /Users/france.cama/code/glovo_de_test/dags/workflows.py
+[2023-08-31T15:54:24.043+0200] {processor.py:839} INFO - DAG(s) dict_keys(['de_test_workflow']) retrieved from /Users/france.cama/code/glovo_de_test/dags/workflows.py
+[2023-08-31T15:54:24.130+0200] {logging_mixin.py:151} INFO - [2023-08-31T15:54:24.130+0200] {dag.py:2907} INFO - Sync 1 DAGs
+[2023-08-31T15:54:24.134+0200] {logging_mixin.py:151} INFO - [2023-08-31T15:54:24.134+0200] {dag.py:3677} INFO - Setting next_dagrun for de_test_workflow to None, run_after=None
+[2023-08-31T15:54:24.144+0200] {processor.py:179} INFO - Processing /Users/france.cama/code/glovo_de_test/dags/workflows.py took 0.108 seconds
+[2023-08-31T15:54:55.026+0200] {processor.py:157} INFO - Started process (PID=3460) to work on /Users/france.cama/code/glovo_de_test/dags/workflows.py
+[2023-08-31T15:54:55.027+0200] {processor.py:829} INFO - Processing file /Users/france.cama/code/glovo_de_test/dags/workflows.py for tasks to queue
+[2023-08-31T15:54:55.027+0200] {logging_mixin.py:151} INFO - [2023-08-31T15:54:55.027+0200] {dagbag.py:539} INFO - Filling up the DagBag from /Users/france.cama/code/glovo_de_test/dags/workflows.py
+[2023-08-31T15:54:55.036+0200] {processor.py:839} INFO - DAG(s) dict_keys(['de_test_workflow']) retrieved from /Users/france.cama/code/glovo_de_test/dags/workflows.py
+[2023-08-31T15:54:55.134+0200] {logging_mixin.py:151} INFO - [2023-08-31T15:54:55.133+0200] {dag.py:2907} INFO - Sync 1 DAGs
+[2023-08-31T15:54:55.138+0200] {logging_mixin.py:151} INFO - [2023-08-31T15:54:55.138+0200] {dag.py:3677} INFO - Setting next_dagrun for de_test_workflow to None, run_after=None
+[2023-08-31T15:54:55.146+0200] {processor.py:179} INFO - Processing /Users/france.cama/code/glovo_de_test/dags/workflows.py took 0.121 seconds
+[2023-08-31T15:55:26.007+0200] {processor.py:157} INFO - Started process (PID=3482) to work on /Users/france.cama/code/glovo_de_test/dags/workflows.py
+[2023-08-31T15:55:26.009+0200] {processor.py:829} INFO - Processing file /Users/france.cama/code/glovo_de_test/dags/workflows.py for tasks to queue
+[2023-08-31T15:55:26.009+0200] {logging_mixin.py:151} INFO - [2023-08-31T15:55:26.009+0200] {dagbag.py:539} INFO - Filling up the DagBag from /Users/france.cama/code/glovo_de_test/dags/workflows.py
+[2023-08-31T15:55:26.018+0200] {processor.py:839} INFO - DAG(s) dict_keys(['de_test_workflow']) retrieved from /Users/france.cama/code/glovo_de_test/dags/workflows.py
+[2023-08-31T15:55:26.117+0200] {logging_mixin.py:151} INFO - [2023-08-31T15:55:26.117+0200] {dag.py:2907} INFO - Sync 1 DAGs
+[2023-08-31T15:55:26.120+0200] {logging_mixin.py:151} INFO - [2023-08-31T15:55:26.120+0200] {dag.py:3677} INFO - Setting next_dagrun for de_test_workflow to None, run_after=None
+[2023-08-31T15:55:26.129+0200] {processor.py:179} INFO - Processing /Users/france.cama/code/glovo_de_test/dags/workflows.py took 0.122 seconds
+[2023-08-31T15:55:56.858+0200] {processor.py:157} INFO - Started process (PID=3487) to work on /Users/france.cama/code/glovo_de_test/dags/workflows.py
+[2023-08-31T15:55:56.860+0200] {processor.py:829} INFO - Processing file /Users/france.cama/code/glovo_de_test/dags/workflows.py for tasks to queue
+[2023-08-31T15:55:56.860+0200] {logging_mixin.py:151} INFO - [2023-08-31T15:55:56.860+0200] {dagbag.py:539} INFO - Filling up the DagBag from /Users/france.cama/code/glovo_de_test/dags/workflows.py
+[2023-08-31T15:55:56.867+0200] {processor.py:839} INFO - DAG(s) dict_keys(['de_test_workflow']) retrieved from /Users/france.cama/code/glovo_de_test/dags/workflows.py
+[2023-08-31T15:55:56.955+0200] {logging_mixin.py:151} INFO - [2023-08-31T15:55:56.955+0200] {dag.py:2907} INFO - Sync 1 DAGs
+[2023-08-31T15:55:56.959+0200] {logging_mixin.py:151} INFO - [2023-08-31T15:55:56.959+0200] {dag.py:3677} INFO - Setting next_dagrun for de_test_workflow to None, run_after=None
+[2023-08-31T15:55:56.967+0200] {processor.py:179} INFO - Processing /Users/france.cama/code/glovo_de_test/dags/workflows.py took 0.109 seconds
+[2023-08-31T15:56:27.823+0200] {processor.py:157} INFO - Started process (PID=3491) to work on /Users/france.cama/code/glovo_de_test/dags/workflows.py
+[2023-08-31T15:56:27.824+0200] {processor.py:829} INFO - Processing file /Users/france.cama/code/glovo_de_test/dags/workflows.py for tasks to queue
+[2023-08-31T15:56:27.825+0200] {logging_mixin.py:151} INFO - [2023-08-31T15:56:27.825+0200] {dagbag.py:539} INFO - Filling up the DagBag from /Users/france.cama/code/glovo_de_test/dags/workflows.py
+[2023-08-31T15:56:27.834+0200] {processor.py:839} INFO - DAG(s) dict_keys(['de_test_workflow']) retrieved from /Users/france.cama/code/glovo_de_test/dags/workflows.py
+[2023-08-31T15:56:27.933+0200] {logging_mixin.py:151} INFO - [2023-08-31T15:56:27.933+0200] {dag.py:2907} INFO - Sync 1 DAGs
+[2023-08-31T15:56:27.937+0200] {logging_mixin.py:151} INFO - [2023-08-31T15:56:27.937+0200] {dag.py:3677} INFO - Setting next_dagrun for de_test_workflow to None, run_after=None
+[2023-08-31T15:56:27.946+0200] {processor.py:179} INFO - Processing /Users/france.cama/code/glovo_de_test/dags/workflows.py took 0.123 seconds
+[2023-08-31T15:56:58.754+0200] {processor.py:157} INFO - Started process (PID=3494) to work on /Users/france.cama/code/glovo_de_test/dags/workflows.py
+[2023-08-31T15:56:58.755+0200] {processor.py:829} INFO - Processing file /Users/france.cama/code/glovo_de_test/dags/workflows.py for tasks to queue
+[2023-08-31T15:56:58.755+0200] {logging_mixin.py:151} INFO - [2023-08-31T15:56:58.755+0200] {dagbag.py:539} INFO - Filling up the DagBag from /Users/france.cama/code/glovo_de_test/dags/workflows.py
+[2023-08-31T15:56:58.761+0200] {processor.py:839} INFO - DAG(s) dict_keys(['de_test_workflow']) retrieved from /Users/france.cama/code/glovo_de_test/dags/workflows.py
+[2023-08-31T15:56:58.844+0200] {logging_mixin.py:151} INFO - [2023-08-31T15:56:58.844+0200] {dag.py:2907} INFO - Sync 1 DAGs
+[2023-08-31T15:56:58.848+0200] {logging_mixin.py:151} INFO - [2023-08-31T15:56:58.848+0200] {dag.py:3677} INFO - Setting next_dagrun for de_test_workflow to None, run_after=None
+[2023-08-31T15:56:58.858+0200] {processor.py:179} INFO - Processing /Users/france.cama/code/glovo_de_test/dags/workflows.py took 0.104 seconds
+[2023-08-31T15:57:29.722+0200] {processor.py:157} INFO - Started process (PID=3503) to work on /Users/france.cama/code/glovo_de_test/dags/workflows.py
+[2023-08-31T15:57:29.725+0200] {processor.py:829} INFO - Processing file /Users/france.cama/code/glovo_de_test/dags/workflows.py for tasks to queue
+[2023-08-31T15:57:29.725+0200] {logging_mixin.py:151} INFO - [2023-08-31T15:57:29.725+0200] {dagbag.py:539} INFO - Filling up the DagBag from /Users/france.cama/code/glovo_de_test/dags/workflows.py
+[2023-08-31T15:57:29.733+0200] {processor.py:839} INFO - DAG(s) dict_keys(['de_test_workflow']) retrieved from /Users/france.cama/code/glovo_de_test/dags/workflows.py
+[2023-08-31T15:57:29.830+0200] {logging_mixin.py:151} INFO - [2023-08-31T15:57:29.830+0200] {dag.py:2907} INFO - Sync 1 DAGs
+[2023-08-31T15:57:29.834+0200] {logging_mixin.py:151} INFO - [2023-08-31T15:57:29.834+0200] {dag.py:3677} INFO - Setting next_dagrun for de_test_workflow to None, run_after=None
+[2023-08-31T15:57:29.843+0200] {processor.py:179} INFO - Processing /Users/france.cama/code/glovo_de_test/dags/workflows.py took 0.121 seconds

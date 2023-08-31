@@ -5,57 +5,6 @@ from pyspark.sql.window import Window
 from typing import List
 
 
-def old_polling_events_info(d: DataFrame, periods: List[int]) -> DataFrame:
-    """
-    Goal: For each order dispatched to a device compute :
-        ● The total count of all polling events
-        ● The count of each type of polling status_code
-        ● The count of each type of polling error_code and the count of responses without error
-        codes.
-        ...across the following periods of time:
-        ● Three minutes before the order creation time
-        ● Three minutes after the order creation time
-        ● One hour before the order creation time
-
-    Solution plan: For every time periods, filter the df to include only requested time periods.
-    Then, for each unique order compute the requested output.
-        """
-    new_df = d
-    for s in periods:
-        if s < 0:
-            _df = d.filter(
-                (d["pollingCT_orderCT_difference"] >= s) & (d["pollingCT_orderCT_difference"] <= 0)) \
-                .groupBy(col("order_id")) \
-                .agg(
-                # total count of polling events for every time period
-                count("status_code").alias(f"total_poll_events_{s}s"),
-                # count of each type of polling status_code for every time period
-                countDistinct(col("status_code")).alias(f"count_typeof_status_c_{s}s"),
-                # count of each type of polling error code for every time period
-                countDistinct(col("error_code")).alias(f"count_typeof_error_c_{s}s"),
-                # count of responses without error codes for every time period
-                sum(when(col("status_code") == 200, 1).otherwise(0)).alias(f"ok_responses_{s}s")
-            )
-
-        else:
-            _df = d.filter(
-                (d["pollingCT_orderCT_difference"] <= s) & (d["pollingCT_orderCT_difference"] >= 0)) \
-                .groupBy(col("order_id")) \
-                .agg(
-                # total count of polling events for every time period
-                count("status_code").alias(f"total_poll_events_{s}s"),
-                # count of each type of polling status_code for every time period
-                countDistinct(col("status_code")).alias(f"count_typeof_status_c_{s}s"),
-                # count of each type of polling error code for every time period
-                countDistinct(col("error_code")).alias(f"count_typeof_error_c_{s}s"),
-                # count of responses without error codes for every time period
-                sum(when(col("status_code") == 200, 1).otherwise(0)).alias(f"ok_responses_{s}s")
-            )
-        new_df = new_df.join(_df, on="order_id")
-
-    return new_df
-
-
 def polling_events_info(d: DataFrame, periods: List[int]) -> DataFrame:
     """
     Goal: For each order dispatched to a device compute :
@@ -159,3 +108,54 @@ def closest_conn_status(d: DataFrame) -> DataFrame:
     ).withColumn("order_creation_time", to_timestamp("order_creation_time"))
 
     return df
+
+
+def old_polling_events_info(d: DataFrame, periods: List[int]) -> DataFrame:
+    """
+    Goal: For each order dispatched to a device compute :
+        ● The total count of all polling events
+        ● The count of each type of polling status_code
+        ● The count of each type of polling error_code and the count of responses without error
+        codes.
+        ...across the following periods of time:
+        ● Three minutes before the order creation time
+        ● Three minutes after the order creation time
+        ● One hour before the order creation time
+
+    Solution plan: For every time periods, filter the df to include only requested time periods.
+    Then, for each unique order compute the requested output.
+        """
+    new_df = d
+    for s in periods:
+        if s < 0:
+            _df = d.filter(
+                (d["pollingCT_orderCT_difference"] >= s) & (d["pollingCT_orderCT_difference"] <= 0)) \
+                .groupBy(col("order_id")) \
+                .agg(
+                # total count of polling events for every time period
+                count("status_code").alias(f"total_poll_events_{s}s"),
+                # count of each type of polling status_code for every time period
+                countDistinct(col("status_code")).alias(f"count_typeof_status_c_{s}s"),
+                # count of each type of polling error code for every time period
+                countDistinct(col("error_code")).alias(f"count_typeof_error_c_{s}s"),
+                # count of responses without error codes for every time period
+                sum(when(col("status_code") == 200, 1).otherwise(0)).alias(f"ok_responses_{s}s")
+            )
+
+        else:
+            _df = d.filter(
+                (d["pollingCT_orderCT_difference"] <= s) & (d["pollingCT_orderCT_difference"] >= 0)) \
+                .groupBy(col("order_id")) \
+                .agg(
+                # total count of polling events for every time period
+                count("status_code").alias(f"total_poll_events_{s}s"),
+                # count of each type of polling status_code for every time period
+                countDistinct(col("status_code")).alias(f"count_typeof_status_c_{s}s"),
+                # count of each type of polling error code for every time period
+                countDistinct(col("error_code")).alias(f"count_typeof_error_c_{s}s"),
+                # count of responses without error codes for every time period
+                sum(when(col("status_code") == 200, 1).otherwise(0)).alias(f"ok_responses_{s}s")
+            )
+        new_df = new_df.join(_df, on="order_id")
+
+    return new_df
