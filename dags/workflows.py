@@ -3,7 +3,6 @@ from airflow.operators.bash import BashOperator
 from datetime import datetime
 from airflow.providers.apache.spark.operators.spark_submit import SparkSubmitOperator
 
-# Define default_args dictionary
 default_args = {
     'owner': 'francesco',
     'start_date': datetime(2023, 8, 30),
@@ -28,5 +27,5 @@ bash_task_1 = BashOperator(
     dag=dag
 )
 
-# Define task dependencies
+# Task dependencies
 spark_task >> bash_task_1
